@@ -54,8 +54,8 @@ public class arrowController : MonoBehaviour {
 			// bound arrow size
 			if (Mathf.Abs(scale.x) <= 0f) {
 				scale.y = scale.x = direction * 0f;
-			} else if (Mathf.Abs(scale.x) >= 1.5f) {
-				scale.y = scale.x = direction * 1.5f;
+			} else if (Mathf.Abs(scale.x) >= 1.2f) {
+				scale.y = scale.x = direction * 1.2f;
 			}
 
 			if (Input.GetTouch (0).phase == TouchPhase.Ended) {

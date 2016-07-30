@@ -135,6 +135,7 @@ public class playerController : MonoBehaviour {
 				Vector3 wp = Camera.main.ScreenToWorldPoint (Input.GetTouch (Input.touchCount - 1).position);
 				Vector2 touchPos = new Vector2 (wp.x, wp.y);
 				Collider2D hit = Physics2D.OverlapPoint (touchPos);
+				Debug.Log (hit);
 				if (hit && hit.GetComponent<metalObjectController>()) {
 					allomancy = true;
 					// deselect all metal objects
@@ -163,6 +164,9 @@ public class playerController : MonoBehaviour {
 		float newX = Mathf.Clamp (transform.position.x, xmin, xmax);
 		float newY = Mathf.Clamp (transform.position.y, -20, ymax);
 		transform.position = new Vector3 (newX, newY, transform.position.z);
+		if (transform.position.y == ymax){
+			GetComponent<Rigidbody2D> ().velocity = new Vector2 (GetComponent<Rigidbody2D> ().velocity.x, 0);
+		}
 	}
 		
 	// apply force to jump
@@ -225,7 +229,7 @@ public class playerController : MonoBehaviour {
 
 	void CalculateAllomanticForce (){
 		GameObject arrow = GameObject.Find ("arrow");
-		float forceScale = Mathf.Abs(arrow.transform.localScale.x) + 0.5f;
+		float forceScale = Mathf.Abs(arrow.transform.localScale.x);
 		float angle = arrow.transform.rotation.eulerAngles.z;
 		if (arrow.GetComponent<arrowController> ().direction == -1) {
 			angle += 180;
