@@ -1,0 +1,193 @@
+fileFormatVersion: 2
+guid: face7613bede847cf844094acadb2acd
+timeCreated: 1469597618
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Jumping_0
+    21300002: Jumping_1
+    21300004: Jumping_2
+    21300006: Jumping_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Jumping_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 250
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 82, y: -46}
+        - {x: 101, y: 62}
+        - {x: 120, y: 82}
+        - {x: 123, y: 104}
+        - {x: 123, y: 150}
+        - {x: 112, y: 174}
+        - {x: 90, y: 188}
+        - {x: 46, y: 188}
+        - {x: 41, y: 187}
+        - {x: -5, y: 142}
+        - {x: -14, y: 102}
+        - {x: -22, y: 55}
+        - {x: -44, y: 5}
+        - {x: -88, y: -117}
+        - {x: -88, y: -132}
+        - {x: -87, y: -138}
+        - {x: -53, y: -184}
+        - {x: -21, y: -194}
+        - {x: 37, y: -194}
+        - {x: 52, y: -186}
+        - {x: 103, y: -143}
+    - name: Jumping_1
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 250
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 79, y: 43}
+        - {x: 100, y: 47}
+        - {x: 122, y: 81}
+        - {x: 122, y: 140}
+        - {x: 117, y: 164}
+        - {x: 91, y: 179}
+        - {x: 40, y: 179}
+        - {x: -4, y: 135}
+        - {x: -17, y: 109}
+        - {x: -9, y: 74}
+        - {x: -37, y: 48}
+        - {x: -80, y: -70}
+        - {x: -109, y: -110}
+        - {x: -113, y: -119}
+        - {x: -113, y: -140}
+        - {x: -85, y: -192}
+        - {x: -62, y: -193}
+        - {x: 48, y: -193}
+        - {x: 98, y: -142}
+        - {x: 100, y: -137}
+        - {x: 77, y: -32}
+    - name: Jumping_2
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 250
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 114, y: 70}
+        - {x: 125, y: 92}
+        - {x: 125, y: 145}
+        - {x: 111, y: 176}
+        - {x: 88, y: 189}
+        - {x: 47, y: 189}
+        - {x: 26, y: 184}
+        - {x: -15, y: 112}
+        - {x: -5, y: 89}
+        - {x: -13, y: 55}
+        - {x: -35, y: 3}
+        - {x: -70, y: -138}
+        - {x: -70, y: -152}
+        - {x: -22, y: -193}
+        - {x: 6, y: -193}
+        - {x: 48, y: -185}
+        - {x: 109, y: -158}
+        - {x: 94, y: -29}
+        - {x: 93, y: 57}
+      - - {x: 114, y: -134}
+        - {x: 115, y: -137}
+        - {x: 118, y: -137}
+        - {x: 120, y: -135}
+        - {x: 119, y: -132}
+        - {x: 116, y: -132}
+    - name: Jumping_3
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 0
+        width: 250
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 118, y: -117}
+        - {x: 97, y: 50}
+        - {x: 118, y: 83}
+        - {x: 118, y: 145}
+        - {x: 115, y: 176}
+        - {x: 90, y: 195}
+        - {x: 75, y: 197}
+        - {x: 39, y: 197}
+        - {x: 20, y: 187}
+        - {x: -2, y: 163}
+        - {x: -21, y: 107}
+        - {x: -18, y: 46}
+        - {x: -30, y: 9}
+        - {x: -36, y: -65}
+        - {x: -57, y: -135}
+        - {x: -57, y: -171}
+        - {x: -33, y: -192}
+        - {x: 13, y: -192}
+        - {x: 61, y: -169}
+        - {x: 114, y: -162}
+        - {x: 118, y: -159}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
