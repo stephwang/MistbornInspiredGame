@@ -16,6 +16,10 @@ public class LevelManager : MonoBehaviour {
 		SceneManager.LoadScene (name);
 	}
 
+	public void LoadLevelByNumber (int num) {
+		SceneManager.LoadScene (num + 1);
+	}
+
 	public void QuitRequest(){
 		Application.Quit ();
 	}
@@ -26,6 +30,10 @@ public class LevelManager : MonoBehaviour {
 
 	public void ReloadLevel () {
 		SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex);
+	}
+
+	public int GetLevelNumber(){
+		return SceneManager.GetActiveScene ().buildIndex - 1;
 	}
 
 }

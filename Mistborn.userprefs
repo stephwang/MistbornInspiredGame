@@ -1,12 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/arrowController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerPrefsManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/playerController.cs" Line="87" Column="34" />
-      <File FileName="Assets/Scripts/metalObjectController.cs" Line="33" Column="39" />
-      <File FileName="Assets/Scripts/arrowController.cs" Line="32" Column="24" />
-      <File FileName="Assets/Scripts/LevelManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/starController.cs" Line="9" Column="57" />
+      <File FileName="Assets/Scripts/LevelManager.cs" Line="20" Column="32" />
+      <File FileName="Assets/Scripts/LevelSquare.cs" Line="10" Column="17" />
+      <File FileName="Assets/Scripts/PlayerPrefsManager.cs" Line="13" Column="22" />
+      <File FileName="Assets/Scripts/metalObjectController.cs" Line="21" Column="36" />
+      <File FileName="Assets/Scripts/starController.cs" Line="6" Column="5" />
+      <File FileName="Assets/Scripts/playerController.cs" Line="51" Column="35" />
+      <File FileName="Assets/MenuController.cs" Line="16" Column="42" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

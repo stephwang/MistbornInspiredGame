@@ -1,0 +1,48 @@
+<linker>
+	<assembly fullname="Assembly-CSharp">
+		<type fullname="LevelManager">
+			<method name="LoadNextLevel"/>
+			<method name="QuitRequest"/>
+			<method name="LoadLevel"/>
+			<method name="QuitRequest"/>
+			<method name="LoadLevel"/>
+			<method name="QuitRequest"/>
+			<method name="LoadLevel"/>
+			<method name="QuitRequest"/>
+			<method name="LoadLevel"/>
+			<method name="QuitRequest"/>
+			<method name="LoadLevel"/>
+			<method name="QuitRequest"/>
+			<method name="LoadLevel"/>
+			<method name="QuitRequest"/>
+			<method name="LoadLevel"/>
+			<method name="QuitRequest"/>
+			<method name="LoadLevel"/>
+			<method name="QuitRequest"/>
+			<method name="LoadLevel"/>
+			<method name="QuitRequest"/>
+			<method name="LoadLevel"/>
+			<method name="QuitRequest"/>
+		</type>
+		<type fullname="MenuController">
+			<method name="ToggleMenu"/>
+			<method name="ToggleMenu"/>
+			<method name="ToggleMenu"/>
+			<method name="ToggleMenu"/>
+			<method name="ToggleMenu"/>
+			<method name="ToggleMenu"/>
+			<method name="ToggleMenu"/>
+			<method name="ToggleMenu"/>
+			<method name="ToggleMenu"/>
+			<method name="ToggleMenu"/>
+			<method name="ToggleMenu"/>
+			<method name="ToggleMenu"/>
+			<method name="ToggleMenu"/>
+			<method name="ToggleMenu"/>
+			<method name="ToggleMenu"/>
+			<method name="ToggleMenu"/>
+			<method name="ToggleMenu"/>
+			<method name="ToggleMenu"/>
+		</type>
+	</assembly>
+</linker>

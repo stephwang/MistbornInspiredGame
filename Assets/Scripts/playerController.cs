@@ -41,9 +41,6 @@ public class playerController : MonoBehaviour {
 	// disable controls - for win/lose conditions
 	public bool disableControls;
 
-	// game menu
-	public GameObject menu;
-
 	void Start() {
 		disableControls = false;
 
@@ -60,9 +57,6 @@ public class playerController : MonoBehaviour {
 
 		metalObjects = GameObject.FindGameObjectsWithTag("Metal");
 		pauseMask = GameObject.Find ("PauseMask");
-
-		menu = GameObject.Find ("Menu");
-		CloseMenu ();
 	}
 	
 
@@ -238,15 +232,5 @@ public class playerController : MonoBehaviour {
 		Vector2 forceDirection = new Vector2 (Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad));
 
 		forceVector = forceDirection * forceScale * force;
-	}
-
-	public void OpenMenu(){
-		Time.timeScale = 0;
-		menu.SetActive (true);
-	}
-
-	public void CloseMenu(){
-		Time.timeScale = 1;
-		menu.SetActive (false);
 	}
 }

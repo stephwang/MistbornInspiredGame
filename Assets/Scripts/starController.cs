@@ -14,12 +14,13 @@ public class starController : MonoBehaviour {
 		winText = GameObject.Find ("WinText").GetComponent<Text> ();
 		winText.text = "";
 	}
-
-	// Update is called once per frame
+		
 	void OnTriggerEnter2D () {
+		// Win!
 		GameObject.FindObjectOfType<playerController> ().disableControls = true;
 		winText.text = winMessages[(int) Mathf.Floor(Random.Range(0, winMessages.Length))];
 		goalAnimator.SetTrigger ("Win");
+		PlayerPrefsManager.Unlocklevel (levelManager.GetLevelNumber());
 		Invoke("LoadNextLevel", 1);
 	}
 
