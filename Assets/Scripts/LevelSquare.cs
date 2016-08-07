@@ -18,7 +18,6 @@ public class LevelSquare : MonoBehaviour {
 	}
 
 	void OnMouseDown() {
-		print ("trying to load level " + level);
 		if (PlayerPrefsManager.IsLevelUnlocked (level)) {
 			levelManager.LoadLevelByNumber (level);
 		};

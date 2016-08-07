@@ -7,31 +7,33 @@ public class PlayerPrefsManager : MonoBehaviour {
 	const string MUSIC = "music_enabled";
 	const string SFX = "sfx_enabled";
 	const string LEVEL_KEY = "level_unlocked_";
+	const string PLAYED = "played";
 
-	// Music settings
-	public static void SetMusicSetting(bool enabled) {
-		if (enabled == true) {
-			PlayerPrefs.SetInt (MUSIC, 1);
-		} else {
-			PlayerPrefs.SetInt (MUSIC, 0);
-		}
+	// get and set if first time played
+	public static void SetPlayedBefore(int played) {
+		PlayerPrefs.SetInt (PLAYED, played);
 	}
 
-	public static bool GetMusicSetting() {
-		return (PlayerPrefs.GetInt (MUSIC) == 1);
+	public static int GetPlayedBefore() {
+		return PlayerPrefs.GetInt (PLAYED);
+	}
+
+	// Music settings
+	public static void SetMusicSetting(int enabled) {
+		PlayerPrefs.SetInt (MUSIC, enabled);
+	}
+
+	public static int GetMusicSetting() {
+		return PlayerPrefs.GetInt (MUSIC);
 	}
 
 	// SFX settings
-	public static void SetSfxSetting(bool enabled) {
-		if (enabled == true) {
-			PlayerPrefs.SetInt (SFX, 1);
-		} else {
-			PlayerPrefs.SetInt (SFX, 0);
-		}
+	public static void SetSfxSetting(int enabled) {
+		PlayerPrefs.SetInt (SFX, enabled);
 	}
 		
-	public static bool GetSfxSetting() {
-		return (PlayerPrefs.GetInt (SFX) == 1);
+	public static int GetSfxSetting() {
+		return PlayerPrefs.GetInt (SFX);
 	}
 
 	// Level tracking

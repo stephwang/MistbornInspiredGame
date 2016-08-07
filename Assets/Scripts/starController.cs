@@ -33,7 +33,7 @@ public class starController : MonoBehaviour {
 	}
 
 	void PlayWinSound(){
-		if (PlayerPrefsManager.GetSfxSetting ()) {
+		if (PlayerPrefsManager.GetSfxSetting () == 1) {
 			audioSource.Play ();
 		}
 	}

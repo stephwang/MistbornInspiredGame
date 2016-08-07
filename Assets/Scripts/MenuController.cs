@@ -14,8 +14,8 @@ public class MenuController : MonoBehaviour {
 	void Start(){
 		musicManager = GameObject.FindObjectOfType<MusicManager> ();
 
-		musicToggle.isOn = (PlayerPrefsManager.GetMusicSetting ());
-		sfxToggle.isOn = (PlayerPrefsManager.GetSfxSetting ());
+		musicToggle.isOn = (PlayerPrefsManager.GetMusicSetting () == 1);
+		sfxToggle.isOn = (PlayerPrefsManager.GetSfxSetting () == 1);
 
 		ToggleMenu ();
 	}
@@ -31,24 +31,37 @@ public class MenuController : MonoBehaviour {
 	public void ToggleMenu(){
 		Component[] menuItems = transform.parent.GetComponentsInChildren (typeof(Transform), true);
 
-		foreach (Component item in menuItems) {
-			if (item.name != "Menu" && item.name != "MenuButton" && item.name != "MenuText") {
-				if (menuActive) {
-					Time.timeScale = 1;
+		if (menuActive) {
+			Time.timeScale = 1;
+			foreach (Component item in menuItems) {
+				if (item.name != "Menu" && item.name != "MenuButton" && item.name != "MenuText") {
 					item.gameObject.SetActive (false);
-				} else {
-					Time.timeScale = 0;
-					item.gameObject.SetActive (true);
 				}
+			}
+		} else {
+			Time.timeScale = 0;
+			foreach (Component item in menuItems) {
+				item.gameObject.SetActive (true);
 			}
 		}
 		menuActive = !menuActive;
 	}
 
 	public void SaveSetting() {
-		PlayerPrefsManager.SetMusicSetting (musicToggle.isOn);
-		PlayerPrefsManager.SetSfxSetting (sfxToggle.isOn);
+		int musicOn, sfxOn;
+		if (musicToggle.isOn) {
+			musicOn = 1;
+		} else {
+			musicOn = 0;
+		}
+		if (sfxToggle.isOn) {
+			sfxOn = 1;
+		} else {
+			sfxOn = 0;
+		}
+	
+		PlayerPrefsManager.SetMusicSetting (musicOn);
+		PlayerPrefsManager.SetSfxSetting (sfxOn);
 	}
-
 
 }

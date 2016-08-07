@@ -241,7 +241,7 @@ public class playerController : MonoBehaviour {
 	}
 
 	void PlayJumpSound(){
-		if (PlayerPrefsManager.GetSfxSetting()) {
+		if (PlayerPrefsManager.GetSfxSetting() == 1) {
 			audioSource.clip = jumpClip;
 			audioSource.volume = 1f;
 			audioSource.Play ();
@@ -249,7 +249,7 @@ public class playerController : MonoBehaviour {
 	}
 
 	void PlayLandSound(){
-		if (PlayerPrefsManager.GetSfxSetting()) {
+		if (PlayerPrefsManager.GetSfxSetting() == 1) {
 			audioSource.clip = landClip;
 			audioSource.volume = 0.7f;
 			audioSource.Play ();
