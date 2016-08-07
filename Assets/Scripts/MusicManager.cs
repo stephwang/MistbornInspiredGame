@@ -3,9 +3,6 @@ using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class MusicManager : MonoBehaviour {
-
-	public AudioClip levelMusic;
-
 	private AudioSource audioSource;
 
 	// Use this for initialization
@@ -15,11 +12,13 @@ public class MusicManager : MonoBehaviour {
 
 	void Start(){
 		audioSource = GetComponent<AudioSource> ();
-		if (levelMusic) {
-			audioSource.clip = levelMusic;
-			audioSource.loop = true;
-			audioSource.Play ();
+		audioSource.loop = true;
+		if (PlayerPrefsManager.GetMusicSetting()) {
+			audioSource.volume = 1;
+		} else {
+			audioSource.volume = 0;
 		}
+		audioSource.Play ();
 	}
 
 	public void SetMusic(int enabled){
