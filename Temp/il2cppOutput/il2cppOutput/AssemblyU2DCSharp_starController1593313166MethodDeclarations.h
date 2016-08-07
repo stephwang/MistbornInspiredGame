@@ -25,3 +25,5 @@ extern "C"  void starController_Start_m2721119693 (starController_t1593313166 * 
 extern "C"  void starController_OnTriggerEnter2D_m348056488 (starController_t1593313166 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void starController::LoadNextLevel()
 extern "C"  void starController_LoadNextLevel_m3669649206 (starController_t1593313166 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void starController::PlayWinSound()
+extern "C"  void starController_PlayWinSound_m477853950 (starController_t1593313166 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

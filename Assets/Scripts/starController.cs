@@ -8,7 +8,11 @@ public class starController : MonoBehaviour {
 	private Text winText;
 	private string[] winMessages = new string[] { "Nice job!", "Well done!", "Good work!" , "Awesome!", "Great!"};
 
+	// audio
+	AudioSource audioSource;
+
 	void Start() {
+		audioSource = GetComponent<AudioSource> ();
 		levelManager = GameObject.FindObjectOfType<LevelManager> ();
 		goalAnimator = GetComponent<Animator> ();
 		winText = GameObject.Find ("WinText").GetComponent<Text> ();
@@ -26,5 +30,11 @@ public class starController : MonoBehaviour {
 
 	void LoadNextLevel () {
 		levelManager.LoadNextLevel ();
+	}
+
+	void PlayWinSound(){
+		if (PlayerPrefsManager.GetSfxSetting ()) {
+			audioSource.Play ();
+		}
 	}
 }

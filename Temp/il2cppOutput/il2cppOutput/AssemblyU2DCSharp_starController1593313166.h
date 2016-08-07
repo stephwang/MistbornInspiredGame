@@ -18,6 +18,8 @@ struct Animator_t2776330603;
 struct Text_t9039225;
 // System.String[]
 struct StringU5BU5D_t4054002952;
+// UnityEngine.AudioSource
+struct AudioSource_t1740077639;
 
 #include "UnityEngine_UnityEngine_MonoBehaviour667441552.h"
 
@@ -39,6 +41,8 @@ public:
 	Text_t9039225 * ___winText_4;
 	// System.String[] starController::winMessages
 	StringU5BU5D_t4054002952* ___winMessages_5;
+	// UnityEngine.AudioSource starController::audioSource
+	AudioSource_t1740077639 * ___audioSource_6;
 
 public:
 	inline static int32_t get_offset_of_levelManager_2() { return static_cast<int32_t>(offsetof(starController_t1593313166, ___levelManager_2)); }
@@ -75,6 +79,15 @@ public:
 	{
 		___winMessages_5 = value;
 		Il2CppCodeGenWriteBarrier(&___winMessages_5, value);
+	}
+
+	inline static int32_t get_offset_of_audioSource_6() { return static_cast<int32_t>(offsetof(starController_t1593313166, ___audioSource_6)); }
+	inline AudioSource_t1740077639 * get_audioSource_6() const { return ___audioSource_6; }
+	inline AudioSource_t1740077639 ** get_address_of_audioSource_6() { return &___audioSource_6; }
+	inline void set_audioSource_6(AudioSource_t1740077639 * value)
+	{
+		___audioSource_6 = value;
+		Il2CppCodeGenWriteBarrier(&___audioSource_6, value);
 	}
 };
 

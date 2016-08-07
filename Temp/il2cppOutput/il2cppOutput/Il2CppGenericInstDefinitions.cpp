@@ -1471,9 +1471,15 @@ extern const Il2CppGenericInst GenInst_LevelManager_t2278695849_0_0_0 = { 1, Gen
 extern const Il2CppType TextMesh_t2567681854_0_0_0;
 static const Il2CppType* GenInst_TextMesh_t2567681854_0_0_0_Types[] = { &TextMesh_t2567681854_0_0_0 };
 extern const Il2CppGenericInst GenInst_TextMesh_t2567681854_0_0_0 = { 1, GenInst_TextMesh_t2567681854_0_0_0_Types };
+extern const Il2CppType MusicManager_t2870594024_0_0_0;
+static const Il2CppType* GenInst_MusicManager_t2870594024_0_0_0_Types[] = { &MusicManager_t2870594024_0_0_0 };
+extern const Il2CppGenericInst GenInst_MusicManager_t2870594024_0_0_0 = { 1, GenInst_MusicManager_t2870594024_0_0_0_Types };
 extern const Il2CppType arrowController_t6683781_0_0_0;
 static const Il2CppType* GenInst_arrowController_t6683781_0_0_0_Types[] = { &arrowController_t6683781_0_0_0 };
 extern const Il2CppGenericInst GenInst_arrowController_t6683781_0_0_0 = { 1, GenInst_arrowController_t6683781_0_0_0_Types };
+extern const Il2CppType AudioSource_t1740077639_0_0_0;
+static const Il2CppType* GenInst_AudioSource_t1740077639_0_0_0_Types[] = { &AudioSource_t1740077639_0_0_0 };
+extern const Il2CppGenericInst GenInst_AudioSource_t1740077639_0_0_0 = { 1, GenInst_AudioSource_t1740077639_0_0_0_Types };
 extern const Il2CppType metalObjectController_t600580450_0_0_0;
 static const Il2CppType* GenInst_metalObjectController_t600580450_0_0_0_Types[] = { &metalObjectController_t600580450_0_0_0 };
 extern const Il2CppGenericInst GenInst_metalObjectController_t600580450_0_0_0 = { 1, GenInst_metalObjectController_t600580450_0_0_0_Types };
@@ -1523,7 +1529,7 @@ static const Il2CppType* GenInst_KeyValuePair_2_t1944668977_0_0_0_KeyValuePair_2
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t1944668977_0_0_0_KeyValuePair_2_t1944668977_0_0_0 = { 2, GenInst_KeyValuePair_2_t1944668977_0_0_0_KeyValuePair_2_t1944668977_0_0_0_Types };
 static const Il2CppType* GenInst_KeyValuePair_2_t1944668977_0_0_0_Il2CppObject_0_0_0_Types[] = { &KeyValuePair_2_t1944668977_0_0_0, &Il2CppObject_0_0_0 };
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t1944668977_0_0_0_Il2CppObject_0_0_0 = { 2, GenInst_KeyValuePair_2_t1944668977_0_0_0_Il2CppObject_0_0_0_Types };
-extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[526] = 
+extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[528] = 
 {
 	&GenInst_Il2CppObject_0_0_0,
 	&GenInst_Int32_t1153838500_0_0_0,
@@ -2026,7 +2032,9 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[526] =
 	&GenInst_playerController_t3709302109_0_0_0,
 	&GenInst_LevelManager_t2278695849_0_0_0,
 	&GenInst_TextMesh_t2567681854_0_0_0,
+	&GenInst_MusicManager_t2870594024_0_0_0,
 	&GenInst_arrowController_t6683781_0_0_0,
+	&GenInst_AudioSource_t1740077639_0_0_0,
 	&GenInst_metalObjectController_t600580450_0_0_0,
 	&GenInst_Byte_t2862609660_0_0_0_Byte_t2862609660_0_0_0,
 	&GenInst_Int32_t1153838500_0_0_0_Int32_t1153838500_0_0_0,

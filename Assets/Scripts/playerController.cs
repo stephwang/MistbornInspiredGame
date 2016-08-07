@@ -41,8 +41,14 @@ public class playerController : MonoBehaviour {
 	// disable controls - for win/lose conditions
 	public bool disableControls;
 
+	// audio
+	AudioSource audioSource;
+	public AudioClip jumpClip;
+	public AudioClip landClip;
+
 	void Start() {
 		disableControls = false;
+		audioSource = GetComponent<AudioSource> ();
 
 		// screen bounds to stop movement outside of screen
 		float distance = transform.position.z - Camera.main.transform.position.z;
@@ -232,5 +238,21 @@ public class playerController : MonoBehaviour {
 		Vector2 forceDirection = new Vector2 (Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad));
 
 		forceVector = forceDirection * forceScale * force;
+	}
+
+	void PlayJumpSound(){
+		if (PlayerPrefsManager.GetSfxSetting()) {
+			audioSource.clip = jumpClip;
+			audioSource.volume = 1f;
+			audioSource.Play ();
+		}
+	}
+
+	void PlayLandSound(){
+		if (PlayerPrefsManager.GetSfxSetting()) {
+			audioSource.clip = landClip;
+			audioSource.volume = 0.7f;
+			audioSource.Play ();
+		}
 	}
 }

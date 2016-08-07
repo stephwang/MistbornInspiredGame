@@ -1,9 +1,10 @@
 <linker>
 <assembly fullname="Assembly-CSharp">
-<type fullname="MenuController" preserve="all"/>
 <type fullname="LevelManager" preserve="all"/>
 <type fullname="LevelSquare" preserve="all"/>
 <type fullname="Lose" preserve="all"/>
+<type fullname="MenuController" preserve="all"/>
+<type fullname="MusicManager" preserve="all"/>
 <type fullname="NewGame" preserve="all"/>
 <type fullname="PlayerPrefsManager" preserve="all"/>
 <type fullname="arrowController" preserve="all"/>

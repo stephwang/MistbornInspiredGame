@@ -37,3 +37,7 @@ extern "C"  void playerController_DrawArrow_m1563665761 (playerController_t37093
 extern "C"  void playerController_DestroyArrow_m49912597 (playerController_t3709302109 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void playerController::CalculateAllomanticForce()
 extern "C"  void playerController_CalculateAllomanticForce_m3856264393 (playerController_t3709302109 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void playerController::PlayJumpSound()
+extern "C"  void playerController_PlayJumpSound_m1229286761 (playerController_t3709302109 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void playerController::PlayLandSound()
+extern "C"  void playerController_PlayLandSound_m319312140 (playerController_t3709302109 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

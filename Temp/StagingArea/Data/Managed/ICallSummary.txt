@@ -23,6 +23,10 @@ UnityEngine.AsyncOperation::get_progress
 UnityEngine.AsyncOperation::InternalDestroy
 UnityEngine.AsyncOperation::set_allowSceneActivation
 UnityEngine.AsyncOperation::set_priority
+UnityEngine.AudioSource::Play
+UnityEngine.AudioSource::set_clip
+UnityEngine.AudioSource::set_loop
+UnityEngine.AudioSource::set_volume
 UnityEngine.Behaviour::get_enabled
 UnityEngine.Behaviour::get_isActiveAndEnabled
 UnityEngine.Behaviour::set_enabled
@@ -412,10 +416,8 @@ UnityEngine.Physics2D::INTERNAL_CALL_Internal_Raycast
 UnityEngine.Physics2D::INTERNAL_CALL_OverlapCircle
 UnityEngine.Physics2D::INTERNAL_CALL_OverlapPoint
 UnityEngine.Physics2D::INTERNAL_CALL_GetRayIntersectionAll
-UnityEngine.PlayerPrefs::TrySetFloat
 UnityEngine.PlayerPrefs::TrySetInt
 UnityEngine.PlayerPrefs::GetInt
-UnityEngine.PlayerPrefs::GetFloat
 UnityEngine.Quaternion::INTERNAL_CALL_Internal_FromEulerRad
 UnityEngine.Quaternion::INTERNAL_CALL_Internal_ToEulerRad
 UnityEngine.Quaternion::INTERNAL_CALL_Inverse

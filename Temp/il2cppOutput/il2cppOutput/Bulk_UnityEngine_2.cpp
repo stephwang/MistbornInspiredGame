@@ -13,6 +13,8 @@
 #include <limits>
 #include <assert.h>
 
+// UnityEngine.Rigidbody2D
+struct Rigidbody2D_t1743771669;
 // UnityEngine.RPC
 struct RPC_t3134615963;
 // System.Object
@@ -187,9 +189,14 @@ struct TypeInferenceRuleAttribute_t1657757719;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array1146569071.h"
+#include "UnityEngine_UnityEngine_Rigidbody2D1743771669.h"
+#include "UnityEngine_UnityEngine_Rigidbody2D1743771669MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Vector24282066565.h"
+#include "mscorlib_System_Void2863195528.h"
+#include "mscorlib_System_Single4291918972.h"
+#include "UnityEngine_UnityEngine_ForceMode2D665452726.h"
 #include "UnityEngine_UnityEngine_RPC3134615963.h"
 #include "UnityEngine_UnityEngine_RPC3134615963MethodDeclarations.h"
-#include "mscorlib_System_Void2863195528.h"
 #include "mscorlib_System_Attribute2523058482MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_RuntimeAnimatorController274649809.h"
 #include "UnityEngine_UnityEngine_RuntimeAnimatorController274649809MethodDeclarations.h"
@@ -214,7 +221,6 @@ struct TypeInferenceRuleAttribute_t1657757719;
 #include "UnityEngine_UnityEngine_Events_UnityAction_2_gen4246757468.h"
 #include "UnityEngine_UnityEngine_Screen3187157168.h"
 #include "UnityEngine_UnityEngine_Screen3187157168MethodDeclarations.h"
-#include "mscorlib_System_Single4291918972.h"
 #include "UnityEngine_UnityEngine_ScriptableObject2970544072.h"
 #include "UnityEngine_UnityEngine_ScriptableObject2970544072MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Object3071478659MethodDeclarations.h"
@@ -351,7 +357,6 @@ struct TypeInferenceRuleAttribute_t1657757719;
 #include "UnityEngine_UnityEngine_Color4194546905.h"
 #include "UnityEngine_UnityEngine_Sprites_DataUtility1448936472.h"
 #include "UnityEngine_UnityEngine_Sprites_DataUtility1448936472MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Vector24282066565.h"
 #include "UnityEngine_UnityEngine_StackTraceUtility4217621253.h"
 #include "UnityEngine_UnityEngine_StackTraceUtility4217621253MethodDeclarations.h"
 #include "mscorlib_System_Diagnostics_StackTrace1047871261MethodDeclarations.h"
@@ -524,6 +529,70 @@ extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m267839954_gsh
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// UnityEngine.Vector2 UnityEngine.Rigidbody2D::get_velocity()
+extern "C"  Vector2_t4282066565  Rigidbody2D_get_velocity_m416159605 (Rigidbody2D_t1743771669 * __this, const MethodInfo* method)
+{
+	Vector2_t4282066565  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Rigidbody2D_INTERNAL_get_velocity_m715507538(__this, (&V_0), /*hidden argument*/NULL);
+		Vector2_t4282066565  L_0 = V_0;
+		return L_0;
+	}
+}
+// System.Void UnityEngine.Rigidbody2D::set_velocity(UnityEngine.Vector2)
+extern "C"  void Rigidbody2D_set_velocity_m100625302 (Rigidbody2D_t1743771669 * __this, Vector2_t4282066565  ___value0, const MethodInfo* method)
+{
+	{
+		Rigidbody2D_INTERNAL_set_velocity_m136509638(__this, (&___value0), /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Rigidbody2D::INTERNAL_get_velocity(UnityEngine.Vector2&)
+extern "C"  void Rigidbody2D_INTERNAL_get_velocity_m715507538 (Rigidbody2D_t1743771669 * __this, Vector2_t4282066565 * ___value0, const MethodInfo* method)
+{
+	typedef void (*Rigidbody2D_INTERNAL_get_velocity_m715507538_ftn) (Rigidbody2D_t1743771669 *, Vector2_t4282066565 *);
+	static Rigidbody2D_INTERNAL_get_velocity_m715507538_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Rigidbody2D_INTERNAL_get_velocity_m715507538_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Rigidbody2D::INTERNAL_get_velocity(UnityEngine.Vector2&)");
+	_il2cpp_icall_func(__this, ___value0);
+}
+// System.Void UnityEngine.Rigidbody2D::INTERNAL_set_velocity(UnityEngine.Vector2&)
+extern "C"  void Rigidbody2D_INTERNAL_set_velocity_m136509638 (Rigidbody2D_t1743771669 * __this, Vector2_t4282066565 * ___value0, const MethodInfo* method)
+{
+	typedef void (*Rigidbody2D_INTERNAL_set_velocity_m136509638_ftn) (Rigidbody2D_t1743771669 *, Vector2_t4282066565 *);
+	static Rigidbody2D_INTERNAL_set_velocity_m136509638_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Rigidbody2D_INTERNAL_set_velocity_m136509638_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Rigidbody2D::INTERNAL_set_velocity(UnityEngine.Vector2&)");
+	_il2cpp_icall_func(__this, ___value0);
+}
+// System.Void UnityEngine.Rigidbody2D::set_gravityScale(System.Single)
+extern "C"  void Rigidbody2D_set_gravityScale_m2024998120 (Rigidbody2D_t1743771669 * __this, float ___value0, const MethodInfo* method)
+{
+	typedef void (*Rigidbody2D_set_gravityScale_m2024998120_ftn) (Rigidbody2D_t1743771669 *, float);
+	static Rigidbody2D_set_gravityScale_m2024998120_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Rigidbody2D_set_gravityScale_m2024998120_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Rigidbody2D::set_gravityScale(System.Single)");
+	_il2cpp_icall_func(__this, ___value0);
+}
+// System.Void UnityEngine.Rigidbody2D::AddForce(UnityEngine.Vector2,UnityEngine.ForceMode2D)
+extern "C"  void Rigidbody2D_AddForce_m4161385513 (Rigidbody2D_t1743771669 * __this, Vector2_t4282066565  ___force0, int32_t ___mode1, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = ___mode1;
+		Rigidbody2D_INTERNAL_CALL_AddForce_m2763823108(NULL /*static, unused*/, __this, (&___force0), L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Rigidbody2D::INTERNAL_CALL_AddForce(UnityEngine.Rigidbody2D,UnityEngine.Vector2&,UnityEngine.ForceMode2D)
+extern "C"  void Rigidbody2D_INTERNAL_CALL_AddForce_m2763823108 (Il2CppObject * __this /* static, unused */, Rigidbody2D_t1743771669 * ___self0, Vector2_t4282066565 * ___force1, int32_t ___mode2, const MethodInfo* method)
+{
+	typedef void (*Rigidbody2D_INTERNAL_CALL_AddForce_m2763823108_ftn) (Rigidbody2D_t1743771669 *, Vector2_t4282066565 *, int32_t);
+	static Rigidbody2D_INTERNAL_CALL_AddForce_m2763823108_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Rigidbody2D_INTERNAL_CALL_AddForce_m2763823108_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Rigidbody2D::INTERNAL_CALL_AddForce(UnityEngine.Rigidbody2D,UnityEngine.Vector2&,UnityEngine.ForceMode2D)");
+	_il2cpp_icall_func(___self0, ___force1, ___mode2);
+}
 // System.Void UnityEngine.RPC::.ctor()
 extern "C"  void RPC__ctor_m281827604 (RPC_t3134615963 * __this, const MethodInfo* method)
 {

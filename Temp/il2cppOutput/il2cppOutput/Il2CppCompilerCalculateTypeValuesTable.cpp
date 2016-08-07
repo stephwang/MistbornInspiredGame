@@ -1052,10 +1052,11 @@
 #include "UnityEngine_UI_UnityEngine_UI_BaseMeshEffect2306480155.h"
 #include "UnityEngine_UI_UnityEngine_UI_Shadow75537580.h"
 #include "UnityEngine_UI_U3CPrivateImplementationDetailsU3E3053238933.h"
-#include "AssemblyU2DCSharp_MenuController17970811.h"
 #include "AssemblyU2DCSharp_LevelManager2278695849.h"
 #include "AssemblyU2DCSharp_LevelSquare3446855073.h"
 #include "AssemblyU2DCSharp_Lose2374453.h"
+#include "AssemblyU2DCSharp_MenuController17970811.h"
+#include "AssemblyU2DCSharp_MusicManager2870594024.h"
 #include "AssemblyU2DCSharp_NewGame3509465490.h"
 #include "AssemblyU2DCSharp_PlayerPrefsManager567672958.h"
 #include "AssemblyU2DCSharp_arrowController6683781.h"
@@ -1419,6 +1420,7 @@
 #include "UnityEngine_UnityEngine_AudioSettings_AudioConfigu1377657005.h"
 #include "UnityEngine_UnityEngine_AudioClip_PCMReaderCallback83861602.h"
 #include "UnityEngine_UnityEngine_AudioClip_PCMSetPositionCa4244274966.h"
+#include "UnityEngine_UnityEngine_AudioSource1740077639.h"
 #include "UnityEngine_UnityEngine_AnimationState3682323633.h"
 #include "UnityEngine_UnityEngine_Animator2776330603.h"
 #include "UnityEngine_UnityEngine_RuntimeAnimatorController274649809.h"
@@ -1492,7 +1494,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[6625] = 
+extern const int32_t g_FieldOffsetTable[6634] = 
 {
 	0,
 	0,
@@ -8063,13 +8065,18 @@ extern const int32_t g_FieldOffsetTable[6625] =
 	Shadow_t75537580::get_offset_of_m_EffectDistance_5(),
 	Shadow_t75537580::get_offset_of_m_UseGraphicAlpha_6(),
 	U3CPrivateImplementationDetailsU3E_t3053238937_StaticFields::get_offset_of_U24U24fieldU2D0_0(),
-	MenuController_t17970811::get_offset_of_menuActive_2(),
 	LevelManager_t2278695849::get_offset_of_autoLoadNextLevelAfter_2(),
 	LevelSquare_t3446855073::get_offset_of_level_2(),
 	LevelSquare_t3446855073::get_offset_of_levelManager_3(),
 	Lose_t2374453::get_offset_of_levelManager_2(),
 	Lose_t2374453::get_offset_of_winText_3(),
 	Lose_t2374453::get_offset_of_loseMessages_4(),
+	MenuController_t17970811::get_offset_of_menuActive_2(),
+	MenuController_t17970811::get_offset_of_musicManager_3(),
+	MenuController_t17970811::get_offset_of_musicToggle_4(),
+	MenuController_t17970811::get_offset_of_sfxToggle_5(),
+	MusicManager_t2870594024::get_offset_of_levelMusic_2(),
+	MusicManager_t2870594024::get_offset_of_audioSource_3(),
 	NewGame_t3509465490::get_offset_of_button_2(),
 	NewGame_t3509465490_StaticFields::get_offset_of_U3CU3Ef__amU24cache1_3(),
 	0,
@@ -8115,15 +8122,19 @@ extern const int32_t g_FieldOffsetTable[6625] =
 	playerController_t3709302109::get_offset_of_pauseMask_26(),
 	playerController_t3709302109::get_offset_of_oldVelocity_27(),
 	playerController_t3709302109::get_offset_of_disableControls_28(),
+	playerController_t3709302109::get_offset_of_audioSource_29(),
+	playerController_t3709302109::get_offset_of_jumpClip_30(),
+	playerController_t3709302109::get_offset_of_landClip_31(),
 	starController_t1593313166::get_offset_of_levelManager_2(),
 	starController_t1593313166::get_offset_of_goalAnimator_3(),
 	starController_t1593313166::get_offset_of_winText_4(),
 	starController_t1593313166::get_offset_of_winMessages_5(),
+	starController_t1593313166::get_offset_of_audioSource_6(),
 };
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1683] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1685] = 
 {
 	sizeof (U3CModuleU3E_t86524790), -1, 0, 0,
 	sizeof (Il2CppObject), -1, 0, 0,
@@ -9454,6 +9465,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1683] =
 	sizeof (AudioClip_t794140988), -1, 0, 0,
 	sizeof (PCMReaderCallback_t83861602), sizeof(Il2CppMethodPointer), 0, 0,
 	sizeof (PCMSetPositionCallback_t4244274966), sizeof(Il2CppMethodPointer), 0, 0,
+	sizeof (AudioSource_t1740077639), -1, 0, 0,
 	sizeof (AnimationEventSource_t2152433973)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (AnimationEvent_t3669457594), -1, 0, 0,
 	sizeof (AnimationState_t3682323633), -1, 0, 0,
@@ -9798,10 +9810,11 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1683] =
 	sizeof (U3CPrivateImplementationDetailsU3E_t3053238937), -1, sizeof(U3CPrivateImplementationDetailsU3E_t3053238937_StaticFields), 0,
 	sizeof (U24ArrayTypeU2412_t3379220351)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2412_t3379220351_marshaled_pinvoke), 0, 0,
 	sizeof (U3CModuleU3E_t86524796), -1, 0, 0,
-	sizeof (MenuController_t17970811), -1, 0, 0,
 	sizeof (LevelManager_t2278695849), -1, 0, 0,
 	sizeof (LevelSquare_t3446855073), -1, 0, 0,
 	sizeof (Lose_t2374453), -1, 0, 0,
+	sizeof (MenuController_t17970811), -1, 0, 0,
+	sizeof (MusicManager_t2870594024), -1, 0, 0,
 	sizeof (NewGame_t3509465490), -1, sizeof(NewGame_t3509465490_StaticFields), 0,
 	sizeof (PlayerPrefsManager_t567672958), -1, 0, 0,
 	sizeof (arrowController_t6683781), -1, 0, 0,

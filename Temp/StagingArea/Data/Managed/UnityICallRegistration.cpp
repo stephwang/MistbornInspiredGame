@@ -1,4 +1,4 @@
-//Generated on : 8/5/2016 10:05:10 PM
+//Generated on : 8/6/2016 5:21:27 PM
 void RegisterAllStrippedInternalCalls()
 {
 	//Start Registrations for type : UnityEngine.AnimationCurve
@@ -124,6 +124,26 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_AsyncOperation_set_priority();
 
 	//End Registrations for type : UnityEngine.AsyncOperation
+
+	//Start Registrations for type : UnityEngine.AudioSource
+
+		//System.Void UnityEngine.AudioSource::Play(System.UInt64)
+		void Register_UnityEngine_AudioSource_Play();
+		Register_UnityEngine_AudioSource_Play();
+
+		//System.Void UnityEngine.AudioSource::set_clip(UnityEngine.AudioClip)
+		void Register_UnityEngine_AudioSource_set_clip();
+		Register_UnityEngine_AudioSource_set_clip();
+
+		//System.Void UnityEngine.AudioSource::set_loop(System.Boolean)
+		void Register_UnityEngine_AudioSource_set_loop();
+		Register_UnityEngine_AudioSource_set_loop();
+
+		//System.Void UnityEngine.AudioSource::set_volume(System.Single)
+		void Register_UnityEngine_AudioSource_set_volume();
+		Register_UnityEngine_AudioSource_set_volume();
+
+	//End Registrations for type : UnityEngine.AudioSource
 
 	//Start Registrations for type : UnityEngine.Behaviour
 
@@ -1879,10 +1899,6 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.PlayerPrefs
 
-		//System.Boolean UnityEngine.PlayerPrefs::TrySetFloat(System.String,System.Single)
-		void Register_UnityEngine_PlayerPrefs_TrySetFloat();
-		Register_UnityEngine_PlayerPrefs_TrySetFloat();
-
 		//System.Boolean UnityEngine.PlayerPrefs::TrySetInt(System.String,System.Int32)
 		void Register_UnityEngine_PlayerPrefs_TrySetInt();
 		Register_UnityEngine_PlayerPrefs_TrySetInt();
@@ -1890,10 +1906,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Int32 UnityEngine.PlayerPrefs::GetInt(System.String,System.Int32)
 		void Register_UnityEngine_PlayerPrefs_GetInt();
 		Register_UnityEngine_PlayerPrefs_GetInt();
-
-		//System.Single UnityEngine.PlayerPrefs::GetFloat(System.String,System.Single)
-		void Register_UnityEngine_PlayerPrefs_GetFloat();
-		Register_UnityEngine_PlayerPrefs_GetFloat();
 
 	//End Registrations for type : UnityEngine.PlayerPrefs
 

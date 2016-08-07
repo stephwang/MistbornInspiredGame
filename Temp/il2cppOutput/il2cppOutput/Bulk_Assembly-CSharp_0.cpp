@@ -37,10 +37,14 @@ struct Lose_t2374453;
 struct Text_t9039225;
 // MenuController
 struct MenuController_t17970811;
+// MusicManager
+struct MusicManager_t2870594024;
 // metalObjectController
 struct metalObjectController_t600580450;
 // UnityEngine.ParticleSystem
 struct ParticleSystem_t381473177;
+// UnityEngine.AudioSource
+struct AudioSource_t1740077639;
 // NewGame
 struct NewGame_t3509465490;
 // UnityEngine.UI.Button
@@ -117,6 +121,10 @@ struct starController_t1593313166;
 #include "UnityEngine_UnityEngine_Random3156561159MethodDeclarations.h"
 #include "AssemblyU2DCSharp_MenuController17970811.h"
 #include "AssemblyU2DCSharp_MenuController17970811MethodDeclarations.h"
+#include "UnityEngine_UI_UnityEngine_UI_Toggle110812896MethodDeclarations.h"
+#include "AssemblyU2DCSharp_MusicManager2870594024.h"
+#include "UnityEngine_UI_UnityEngine_UI_Toggle110812896.h"
+#include "AssemblyU2DCSharp_MusicManager2870594024MethodDeclarations.h"
 #include "mscorlib_System_Type2863145774MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Time4241968337MethodDeclarations.h"
 #include "UnityEngine_ArrayTypes.h"
@@ -129,6 +137,9 @@ struct starController_t1593313166;
 #include "UnityEngine_UnityEngine_ParticleSystem381473177MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Behaviour200106419.h"
 #include "UnityEngine_UnityEngine_ParticleSystem381473177.h"
+#include "UnityEngine_UnityEngine_AudioSource1740077639MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_AudioSource1740077639.h"
+#include "UnityEngine_UnityEngine_AudioClip794140988.h"
 #include "AssemblyU2DCSharp_NewGame3509465490.h"
 #include "AssemblyU2DCSharp_NewGame3509465490MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_Button3896396478MethodDeclarations.h"
@@ -180,6 +191,8 @@ extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m3652735468_g
 #define GameObject_GetComponent_TisIl2CppObject_m3652735468(__this, method) ((  Il2CppObject * (*) (GameObject_t3674682005 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3652735468_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.UI.Text>()
 #define GameObject_GetComponent_TisText_t9039225_m202917489(__this, method) ((  Text_t9039225 * (*) (GameObject_t3674682005 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3652735468_gshared)(__this, method)
+// !!0 UnityEngine.Object::FindObjectOfType<MusicManager>()
+#define Object_FindObjectOfType_TisMusicManager_t2870594024_m230018117(__this /* static, unused */, method) ((  MusicManager_t2870594024 * (*) (Il2CppObject * /* static, unused */, const MethodInfo*))Object_FindObjectOfType_TisIl2CppObject_m2892359027_gshared)(__this /* static, unused */, method)
 // !!0 UnityEngine.Component::GetComponentInChildren<UnityEngine.LineRenderer>()
 #define Component_GetComponentInChildren_TisLineRenderer_t1892709339_m586149403(__this, method) ((  LineRenderer_t1892709339 * (*) (Component_t3501516275 *, const MethodInfo*))Component_GetComponentInChildren_TisIl2CppObject_m900797242_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<playerController>()
@@ -188,6 +201,8 @@ extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m3652735468_g
 #define Component_GetComponentInChildren_TisarrowController_t6683781_m454458672(__this, method) ((  arrowController_t6683781 * (*) (Component_t3501516275 *, const MethodInfo*))Component_GetComponentInChildren_TisIl2CppObject_m900797242_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.ParticleSystem>()
 #define Component_GetComponent_TisParticleSystem_t381473177_m423524409(__this, method) ((  ParticleSystem_t381473177 * (*) (Component_t3501516275 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
+// !!0 UnityEngine.Component::GetComponent<UnityEngine.AudioSource>()
+#define Component_GetComponent_TisAudioSource_t1740077639_m3821406207(__this, method) ((  AudioSource_t1740077639 * (*) (Component_t3501516275 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.UI.Button>()
 #define Component_GetComponent_TisButton_t3896396478_m2828276196(__this, method) ((  Button_t3896396478 * (*) (Component_t3501516275 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.Animator>()
@@ -771,10 +786,61 @@ extern "C"  void MenuController__ctor_m1449767040 (MenuController_t17970811 * __
 	}
 }
 // System.Void MenuController::Start()
+extern Il2CppClass* Object_t3071478659_il2cpp_TypeInfo_var;
+extern const MethodInfo* Object_FindObjectOfType_TisMusicManager_t2870594024_m230018117_MethodInfo_var;
+extern const uint32_t MenuController_Start_m396904832_MetadataUsageId;
 extern "C"  void MenuController_Start_m396904832 (MenuController_t17970811 * __this, const MethodInfo* method)
 {
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
 	{
+		il2cpp_codegen_initialize_method (MenuController_Start_m396904832_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t3071478659_il2cpp_TypeInfo_var);
+		MusicManager_t2870594024 * L_0 = Object_FindObjectOfType_TisMusicManager_t2870594024_m230018117(NULL /*static, unused*/, /*hidden argument*/Object_FindObjectOfType_TisMusicManager_t2870594024_m230018117_MethodInfo_var);
+		__this->set_musicManager_3(L_0);
+		Toggle_t110812896 * L_1 = __this->get_musicToggle_4();
+		bool L_2 = PlayerPrefsManager_GetMusicSetting_m176498408(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		Toggle_set_isOn_m3467664234(L_1, L_2, /*hidden argument*/NULL);
+		Toggle_t110812896 * L_3 = __this->get_sfxToggle_5();
+		bool L_4 = PlayerPrefsManager_GetSfxSetting_m270427016(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		Toggle_set_isOn_m3467664234(L_3, L_4, /*hidden argument*/NULL);
 		MenuController_ToggleMenu_m4136624279(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void MenuController::UpdateMusicSetting()
+extern "C"  void MenuController_UpdateMusicSetting_m1365643864 (MenuController_t17970811 * __this, const MethodInfo* method)
+{
+	{
+		Toggle_t110812896 * L_0 = __this->get_musicToggle_4();
+		NullCheck(L_0);
+		bool L_1 = Toggle_get_isOn_m2105608497(L_0, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0021;
+		}
+	}
+	{
+		MusicManager_t2870594024 * L_2 = __this->get_musicManager_3();
+		NullCheck(L_2);
+		MusicManager_SetMusic_m1386028709(L_2, 1, /*hidden argument*/NULL);
+		goto IL_002d;
+	}
+
+IL_0021:
+	{
+		MusicManager_t2870594024 * L_3 = __this->get_musicManager_3();
+		NullCheck(L_3);
+		MusicManager_SetMusic_m1386028709(L_3, 0, /*hidden argument*/NULL);
+	}
+
+IL_002d:
+	{
 		return;
 	}
 }
@@ -900,6 +966,21 @@ IL_00a8:
 	{
 		bool L_26 = __this->get_menuActive_2();
 		__this->set_menuActive_2((bool)((((int32_t)L_26) == ((int32_t)0))? 1 : 0));
+		return;
+	}
+}
+// System.Void MenuController::SaveSetting()
+extern "C"  void MenuController_SaveSetting_m4290371889 (MenuController_t17970811 * __this, const MethodInfo* method)
+{
+	{
+		Toggle_t110812896 * L_0 = __this->get_musicToggle_4();
+		NullCheck(L_0);
+		bool L_1 = Toggle_get_isOn_m2105608497(L_0, /*hidden argument*/NULL);
+		PlayerPrefsManager_SetMusicSetting_m3476237471(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		Toggle_t110812896 * L_2 = __this->get_sfxToggle_5();
+		NullCheck(L_2);
+		bool L_3 = Toggle_get_isOn_m2105608497(L_2, /*hidden argument*/NULL);
+		PlayerPrefsManager_SetSfxSetting_m3091358015(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -1109,6 +1190,84 @@ extern "C"  void metalObjectController_DeselectObject_m1949332663 (metalObjectCo
 		return;
 	}
 }
+// System.Void MusicManager::.ctor()
+extern "C"  void MusicManager__ctor_m1429130675 (MusicManager_t2870594024 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void MusicManager::Awake()
+extern Il2CppClass* Object_t3071478659_il2cpp_TypeInfo_var;
+extern const uint32_t MusicManager_Awake_m1666735894_MetadataUsageId;
+extern "C"  void MusicManager_Awake_m1666735894 (MusicManager_t2870594024 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (MusicManager_Awake_m1666735894_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		GameObject_t3674682005 * L_0 = Component_get_gameObject_m1170635899(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t3071478659_il2cpp_TypeInfo_var);
+		Object_DontDestroyOnLoad_m4064482788(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void MusicManager::Start()
+extern Il2CppClass* Object_t3071478659_il2cpp_TypeInfo_var;
+extern const MethodInfo* Component_GetComponent_TisAudioSource_t1740077639_m3821406207_MethodInfo_var;
+extern const uint32_t MusicManager_Start_m376268467_MetadataUsageId;
+extern "C"  void MusicManager_Start_m376268467 (MusicManager_t2870594024 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (MusicManager_Start_m376268467_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		AudioSource_t1740077639 * L_0 = Component_GetComponent_TisAudioSource_t1740077639_m3821406207(__this, /*hidden argument*/Component_GetComponent_TisAudioSource_t1740077639_m3821406207_MethodInfo_var);
+		__this->set_audioSource_3(L_0);
+		AudioClip_t794140988 * L_1 = __this->get_levelMusic_2();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t3071478659_il2cpp_TypeInfo_var);
+		bool L_2 = Object_op_Implicit_m2106766291(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		if (!L_2)
+		{
+			goto IL_0044;
+		}
+	}
+	{
+		AudioSource_t1740077639 * L_3 = __this->get_audioSource_3();
+		AudioClip_t794140988 * L_4 = __this->get_levelMusic_2();
+		NullCheck(L_3);
+		AudioSource_set_clip_m19502010(L_3, L_4, /*hidden argument*/NULL);
+		AudioSource_t1740077639 * L_5 = __this->get_audioSource_3();
+		NullCheck(L_5);
+		AudioSource_set_loop_m3617666708(L_5, (bool)1, /*hidden argument*/NULL);
+		AudioSource_t1740077639 * L_6 = __this->get_audioSource_3();
+		NullCheck(L_6);
+		AudioSource_Play_m1360558992(L_6, /*hidden argument*/NULL);
+	}
+
+IL_0044:
+	{
+		return;
+	}
+}
+// System.Void MusicManager::SetMusic(System.Int32)
+extern "C"  void MusicManager_SetMusic_m1386028709 (MusicManager_t2870594024 * __this, int32_t ___enabled0, const MethodInfo* method)
+{
+	{
+		AudioSource_t1740077639 * L_0 = __this->get_audioSource_3();
+		int32_t L_1 = ___enabled0;
+		NullCheck(L_0);
+		AudioSource_set_volume_m1410546616(L_0, (((float)((float)L_1))), /*hidden argument*/NULL);
+		return;
+	}
+}
 // System.Void NewGame::.ctor()
 extern "C"  void NewGame__ctor_m3041174041 (NewGame_t3509465490 * __this, const MethodInfo* method)
 {
@@ -1196,6 +1355,7 @@ extern "C"  void playerController__ctor_m612329950 (playerController_t3709302109
 	}
 }
 // System.Void playerController::Start()
+extern const MethodInfo* Component_GetComponent_TisAudioSource_t1740077639_m3821406207_MethodInfo_var;
 extern const MethodInfo* Component_GetComponent_TisAnimator_t2776330603_m4147395588_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral74234599;
 extern Il2CppCodeGenString* _stringLiteral2833176034;
@@ -1221,58 +1381,60 @@ extern "C"  void playerController_Start_m3854435038 (playerController_t370930210
 	memset(&V_5, 0, sizeof(V_5));
 	{
 		__this->set_disableControls_28((bool)0);
-		Transform_t1659122786 * L_0 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
-		NullCheck(L_0);
-		Vector3_t4282066566  L_1 = Transform_get_position_m2211398607(L_0, /*hidden argument*/NULL);
-		V_4 = L_1;
-		float L_2 = (&V_4)->get_z_3();
-		Camera_t2727095145 * L_3 = Camera_get_main_m671815697(NULL /*static, unused*/, /*hidden argument*/NULL);
-		NullCheck(L_3);
-		Transform_t1659122786 * L_4 = Component_get_transform_m4257140443(L_3, /*hidden argument*/NULL);
+		AudioSource_t1740077639 * L_0 = Component_GetComponent_TisAudioSource_t1740077639_m3821406207(__this, /*hidden argument*/Component_GetComponent_TisAudioSource_t1740077639_m3821406207_MethodInfo_var);
+		__this->set_audioSource_29(L_0);
+		Transform_t1659122786 * L_1 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		Vector3_t4282066566  L_2 = Transform_get_position_m2211398607(L_1, /*hidden argument*/NULL);
+		V_4 = L_2;
+		float L_3 = (&V_4)->get_z_3();
+		Camera_t2727095145 * L_4 = Camera_get_main_m671815697(NULL /*static, unused*/, /*hidden argument*/NULL);
 		NullCheck(L_4);
-		Vector3_t4282066566  L_5 = Transform_get_position_m2211398607(L_4, /*hidden argument*/NULL);
-		V_5 = L_5;
-		float L_6 = (&V_5)->get_z_3();
-		V_0 = ((float)((float)L_2-(float)L_6));
-		Camera_t2727095145 * L_7 = Camera_get_main_m671815697(NULL /*static, unused*/, /*hidden argument*/NULL);
-		float L_8 = V_0;
-		Vector3_t4282066566  L_9;
-		memset(&L_9, 0, sizeof(L_9));
-		Vector3__ctor_m2926210380(&L_9, (0.0f), (0.0f), L_8, /*hidden argument*/NULL);
-		NullCheck(L_7);
-		Vector3_t4282066566  L_10 = Camera_ViewportToWorldPoint_m1641213412(L_7, L_9, /*hidden argument*/NULL);
-		V_1 = L_10;
-		Camera_t2727095145 * L_11 = Camera_get_main_m671815697(NULL /*static, unused*/, /*hidden argument*/NULL);
-		float L_12 = V_0;
-		Vector3_t4282066566  L_13;
-		memset(&L_13, 0, sizeof(L_13));
-		Vector3__ctor_m2926210380(&L_13, (1.0f), (0.0f), L_12, /*hidden argument*/NULL);
-		NullCheck(L_11);
-		Vector3_t4282066566  L_14 = Camera_ViewportToWorldPoint_m1641213412(L_11, L_13, /*hidden argument*/NULL);
-		V_2 = L_14;
-		Camera_t2727095145 * L_15 = Camera_get_main_m671815697(NULL /*static, unused*/, /*hidden argument*/NULL);
-		float L_16 = V_0;
-		Vector3_t4282066566  L_17;
-		memset(&L_17, 0, sizeof(L_17));
-		Vector3__ctor_m2926210380(&L_17, (0.0f), (1.0f), L_16, /*hidden argument*/NULL);
-		NullCheck(L_15);
-		Vector3_t4282066566  L_18 = Camera_ViewportToWorldPoint_m1641213412(L_15, L_17, /*hidden argument*/NULL);
-		V_3 = L_18;
-		float L_19 = (&V_1)->get_x_1();
-		float L_20 = __this->get_padding_6();
-		__this->set_xmin_2(((float)((float)L_19+(float)L_20)));
-		float L_21 = (&V_2)->get_x_1();
-		float L_22 = __this->get_padding_6();
-		__this->set_xmax_3(((float)((float)L_21-(float)L_22)));
-		float L_23 = (&V_3)->get_y_2();
-		float L_24 = __this->get_padding_6();
-		__this->set_ymax_4(((float)((float)L_23-(float)L_24)));
-		Animator_t2776330603 * L_25 = Component_GetComponent_TisAnimator_t2776330603_m4147395588(__this, /*hidden argument*/Component_GetComponent_TisAnimator_t2776330603_m4147395588_MethodInfo_var);
-		__this->set_anim_7(L_25);
-		GameObjectU5BU5D_t2662109048* L_26 = GameObject_FindGameObjectsWithTag_m3058873418(NULL /*static, unused*/, _stringLiteral74234599, /*hidden argument*/NULL);
-		__this->set_metalObjects_20(L_26);
-		GameObject_t3674682005 * L_27 = GameObject_Find_m332785498(NULL /*static, unused*/, _stringLiteral2833176034, /*hidden argument*/NULL);
-		__this->set_pauseMask_26(L_27);
+		Transform_t1659122786 * L_5 = Component_get_transform_m4257140443(L_4, /*hidden argument*/NULL);
+		NullCheck(L_5);
+		Vector3_t4282066566  L_6 = Transform_get_position_m2211398607(L_5, /*hidden argument*/NULL);
+		V_5 = L_6;
+		float L_7 = (&V_5)->get_z_3();
+		V_0 = ((float)((float)L_3-(float)L_7));
+		Camera_t2727095145 * L_8 = Camera_get_main_m671815697(NULL /*static, unused*/, /*hidden argument*/NULL);
+		float L_9 = V_0;
+		Vector3_t4282066566  L_10;
+		memset(&L_10, 0, sizeof(L_10));
+		Vector3__ctor_m2926210380(&L_10, (0.0f), (0.0f), L_9, /*hidden argument*/NULL);
+		NullCheck(L_8);
+		Vector3_t4282066566  L_11 = Camera_ViewportToWorldPoint_m1641213412(L_8, L_10, /*hidden argument*/NULL);
+		V_1 = L_11;
+		Camera_t2727095145 * L_12 = Camera_get_main_m671815697(NULL /*static, unused*/, /*hidden argument*/NULL);
+		float L_13 = V_0;
+		Vector3_t4282066566  L_14;
+		memset(&L_14, 0, sizeof(L_14));
+		Vector3__ctor_m2926210380(&L_14, (1.0f), (0.0f), L_13, /*hidden argument*/NULL);
+		NullCheck(L_12);
+		Vector3_t4282066566  L_15 = Camera_ViewportToWorldPoint_m1641213412(L_12, L_14, /*hidden argument*/NULL);
+		V_2 = L_15;
+		Camera_t2727095145 * L_16 = Camera_get_main_m671815697(NULL /*static, unused*/, /*hidden argument*/NULL);
+		float L_17 = V_0;
+		Vector3_t4282066566  L_18;
+		memset(&L_18, 0, sizeof(L_18));
+		Vector3__ctor_m2926210380(&L_18, (0.0f), (1.0f), L_17, /*hidden argument*/NULL);
+		NullCheck(L_16);
+		Vector3_t4282066566  L_19 = Camera_ViewportToWorldPoint_m1641213412(L_16, L_18, /*hidden argument*/NULL);
+		V_3 = L_19;
+		float L_20 = (&V_1)->get_x_1();
+		float L_21 = __this->get_padding_6();
+		__this->set_xmin_2(((float)((float)L_20+(float)L_21)));
+		float L_22 = (&V_2)->get_x_1();
+		float L_23 = __this->get_padding_6();
+		__this->set_xmax_3(((float)((float)L_22-(float)L_23)));
+		float L_24 = (&V_3)->get_y_2();
+		float L_25 = __this->get_padding_6();
+		__this->set_ymax_4(((float)((float)L_24-(float)L_25)));
+		Animator_t2776330603 * L_26 = Component_GetComponent_TisAnimator_t2776330603_m4147395588(__this, /*hidden argument*/Component_GetComponent_TisAnimator_t2776330603_m4147395588_MethodInfo_var);
+		__this->set_anim_7(L_26);
+		GameObjectU5BU5D_t2662109048* L_27 = GameObject_FindGameObjectsWithTag_m3058873418(NULL /*static, unused*/, _stringLiteral74234599, /*hidden argument*/NULL);
+		__this->set_metalObjects_20(L_27);
+		GameObject_t3674682005 * L_28 = GameObject_Find_m332785498(NULL /*static, unused*/, _stringLiteral2833176034, /*hidden argument*/NULL);
+		__this->set_pauseMask_26(L_28);
 		return;
 	}
 }
@@ -2117,6 +2279,62 @@ IL_005c:
 		return;
 	}
 }
+// System.Void playerController::PlayJumpSound()
+extern "C"  void playerController_PlayJumpSound_m1229286761 (playerController_t3709302109 * __this, const MethodInfo* method)
+{
+	{
+		bool L_0 = PlayerPrefsManager_GetSfxSetting_m270427016(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if (!L_0)
+		{
+			goto IL_0036;
+		}
+	}
+	{
+		AudioSource_t1740077639 * L_1 = __this->get_audioSource_29();
+		AudioClip_t794140988 * L_2 = __this->get_jumpClip_30();
+		NullCheck(L_1);
+		AudioSource_set_clip_m19502010(L_1, L_2, /*hidden argument*/NULL);
+		AudioSource_t1740077639 * L_3 = __this->get_audioSource_29();
+		NullCheck(L_3);
+		AudioSource_set_volume_m1410546616(L_3, (1.0f), /*hidden argument*/NULL);
+		AudioSource_t1740077639 * L_4 = __this->get_audioSource_29();
+		NullCheck(L_4);
+		AudioSource_Play_m1360558992(L_4, /*hidden argument*/NULL);
+	}
+
+IL_0036:
+	{
+		return;
+	}
+}
+// System.Void playerController::PlayLandSound()
+extern "C"  void playerController_PlayLandSound_m319312140 (playerController_t3709302109 * __this, const MethodInfo* method)
+{
+	{
+		bool L_0 = PlayerPrefsManager_GetSfxSetting_m270427016(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if (!L_0)
+		{
+			goto IL_0036;
+		}
+	}
+	{
+		AudioSource_t1740077639 * L_1 = __this->get_audioSource_29();
+		AudioClip_t794140988 * L_2 = __this->get_landClip_31();
+		NullCheck(L_1);
+		AudioSource_set_clip_m19502010(L_1, L_2, /*hidden argument*/NULL);
+		AudioSource_t1740077639 * L_3 = __this->get_audioSource_29();
+		NullCheck(L_3);
+		AudioSource_set_volume_m1410546616(L_3, (0.7f), /*hidden argument*/NULL);
+		AudioSource_t1740077639 * L_4 = __this->get_audioSource_29();
+		NullCheck(L_4);
+		AudioSource_Play_m1360558992(L_4, /*hidden argument*/NULL);
+	}
+
+IL_0036:
+	{
+		return;
+	}
+}
 // System.Void PlayerPrefsManager::.ctor()
 extern "C"  void PlayerPrefsManager__ctor_m2738204125 (PlayerPrefsManager_t567672958 * __this, const MethodInfo* method)
 {
@@ -2125,64 +2343,102 @@ extern "C"  void PlayerPrefsManager__ctor_m2738204125 (PlayerPrefsManager_t56767
 		return;
 	}
 }
-// System.Void PlayerPrefsManager::SetMasterVolume(System.Single)
-extern Il2CppClass* Debug_t4195163081_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral1048422295;
-extern Il2CppCodeGenString* _stringLiteral3162089216;
-extern const uint32_t PlayerPrefsManager_SetMasterVolume_m760796594_MetadataUsageId;
-extern "C"  void PlayerPrefsManager_SetMasterVolume_m760796594 (Il2CppObject * __this /* static, unused */, float ___volume0, const MethodInfo* method)
+// System.Void PlayerPrefsManager::SetMusicSetting(System.Boolean)
+extern Il2CppCodeGenString* _stringLiteral2850827047;
+extern const uint32_t PlayerPrefsManager_SetMusicSetting_m3476237471_MetadataUsageId;
+extern "C"  void PlayerPrefsManager_SetMusicSetting_m3476237471 (Il2CppObject * __this /* static, unused */, bool ___enabled0, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (PlayerPrefsManager_SetMasterVolume_m760796594_MetadataUsageId);
+		il2cpp_codegen_initialize_method (PlayerPrefsManager_SetMusicSetting_m3476237471_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		float L_0 = ___volume0;
-		if ((!(((float)L_0) >= ((float)(0.0f)))))
+		bool L_0 = ___enabled0;
+		if (!L_0)
 		{
-			goto IL_0026;
+			goto IL_0016;
 		}
 	}
 	{
-		float L_1 = ___volume0;
-		if ((!(((float)L_1) <= ((float)(1.0f)))))
-		{
-			goto IL_0026;
-		}
-	}
-	{
-		float L_2 = ___volume0;
-		PlayerPrefs_SetFloat_m1687591347(NULL /*static, unused*/, _stringLiteral1048422295, L_2, /*hidden argument*/NULL);
-		goto IL_0030;
+		PlayerPrefs_SetInt_m3485171996(NULL /*static, unused*/, _stringLiteral2850827047, 1, /*hidden argument*/NULL);
+		goto IL_0021;
 	}
 
-IL_0026:
+IL_0016:
 	{
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t4195163081_il2cpp_TypeInfo_var);
-		Debug_LogError_m4127342994(NULL /*static, unused*/, _stringLiteral3162089216, /*hidden argument*/NULL);
+		PlayerPrefs_SetInt_m3485171996(NULL /*static, unused*/, _stringLiteral2850827047, 0, /*hidden argument*/NULL);
 	}
 
-IL_0030:
+IL_0021:
 	{
 		return;
 	}
 }
-// System.Single PlayerPrefsManager::GetMasterVolume()
-extern Il2CppCodeGenString* _stringLiteral1048422295;
-extern const uint32_t PlayerPrefsManager_GetMasterVolume_m1730672449_MetadataUsageId;
-extern "C"  float PlayerPrefsManager_GetMasterVolume_m1730672449 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+// System.Boolean PlayerPrefsManager::GetMusicSetting()
+extern Il2CppCodeGenString* _stringLiteral2850827047;
+extern const uint32_t PlayerPrefsManager_GetMusicSetting_m176498408_MetadataUsageId;
+extern "C"  bool PlayerPrefsManager_GetMusicSetting_m176498408 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (PlayerPrefsManager_GetMasterVolume_m1730672449_MetadataUsageId);
+		il2cpp_codegen_initialize_method (PlayerPrefsManager_GetMusicSetting_m176498408_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		float L_0 = PlayerPrefs_GetFloat_m4179026766(NULL /*static, unused*/, _stringLiteral1048422295, /*hidden argument*/NULL);
-		return L_0;
+		int32_t L_0 = PlayerPrefs_GetInt_m1334009359(NULL /*static, unused*/, _stringLiteral2850827047, /*hidden argument*/NULL);
+		return (bool)((((int32_t)L_0) == ((int32_t)1))? 1 : 0);
+	}
+}
+// System.Void PlayerPrefsManager::SetSfxSetting(System.Boolean)
+extern Il2CppCodeGenString* _stringLiteral3836909959;
+extern const uint32_t PlayerPrefsManager_SetSfxSetting_m3091358015_MetadataUsageId;
+extern "C"  void PlayerPrefsManager_SetSfxSetting_m3091358015 (Il2CppObject * __this /* static, unused */, bool ___enabled0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PlayerPrefsManager_SetSfxSetting_m3091358015_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		bool L_0 = ___enabled0;
+		if (!L_0)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		PlayerPrefs_SetInt_m3485171996(NULL /*static, unused*/, _stringLiteral3836909959, 1, /*hidden argument*/NULL);
+		goto IL_0021;
+	}
+
+IL_0016:
+	{
+		PlayerPrefs_SetInt_m3485171996(NULL /*static, unused*/, _stringLiteral3836909959, 0, /*hidden argument*/NULL);
+	}
+
+IL_0021:
+	{
+		return;
+	}
+}
+// System.Boolean PlayerPrefsManager::GetSfxSetting()
+extern Il2CppCodeGenString* _stringLiteral3836909959;
+extern const uint32_t PlayerPrefsManager_GetSfxSetting_m270427016_MetadataUsageId;
+extern "C"  bool PlayerPrefsManager_GetSfxSetting_m270427016 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PlayerPrefsManager_GetSfxSetting_m270427016_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		int32_t L_0 = PlayerPrefs_GetInt_m1334009359(NULL /*static, unused*/, _stringLiteral3836909959, /*hidden argument*/NULL);
+		return (bool)((((int32_t)L_0) == ((int32_t)1))? 1 : 0);
 	}
 }
 // System.Void PlayerPrefsManager::Unlocklevel(System.Int32)
@@ -2263,66 +2519,6 @@ IL_0027:
 		return (bool)0;
 	}
 }
-// System.Void PlayerPrefsManager::SetDifficulty(System.Single)
-extern Il2CppClass* Debug_t4195163081_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral1829500859;
-extern Il2CppCodeGenString* _stringLiteral1907616583;
-extern const uint32_t PlayerPrefsManager_SetDifficulty_m1725983027_MetadataUsageId;
-extern "C"  void PlayerPrefsManager_SetDifficulty_m1725983027 (Il2CppObject * __this /* static, unused */, float ___difficulty0, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (PlayerPrefsManager_SetDifficulty_m1725983027_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		float L_0 = ___difficulty0;
-		if ((!(((float)L_0) >= ((float)(1.0f)))))
-		{
-			goto IL_0026;
-		}
-	}
-	{
-		float L_1 = ___difficulty0;
-		if ((!(((float)L_1) <= ((float)(3.0f)))))
-		{
-			goto IL_0026;
-		}
-	}
-	{
-		float L_2 = ___difficulty0;
-		PlayerPrefs_SetFloat_m1687591347(NULL /*static, unused*/, _stringLiteral1829500859, L_2, /*hidden argument*/NULL);
-		goto IL_0030;
-	}
-
-IL_0026:
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t4195163081_il2cpp_TypeInfo_var);
-		Debug_LogError_m4127342994(NULL /*static, unused*/, _stringLiteral1907616583, /*hidden argument*/NULL);
-	}
-
-IL_0030:
-	{
-		return;
-	}
-}
-// System.Single PlayerPrefsManager::GetDifficulty()
-extern Il2CppCodeGenString* _stringLiteral1829500859;
-extern const uint32_t PlayerPrefsManager_GetDifficulty_m1110724640_MetadataUsageId;
-extern "C"  float PlayerPrefsManager_GetDifficulty_m1110724640 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (PlayerPrefsManager_GetDifficulty_m1110724640_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		float L_0 = PlayerPrefs_GetFloat_m4179026766(NULL /*static, unused*/, _stringLiteral1829500859, /*hidden argument*/NULL);
-		return L_0;
-	}
-}
 // System.Void starController::.ctor()
 extern Il2CppClass* StringU5BU5D_t4054002952_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral3951847111;
@@ -2373,6 +2569,7 @@ extern "C"  void starController__ctor_m3773981901 (starController_t1593313166 * 
 // System.Void starController::Start()
 extern Il2CppClass* Object_t3071478659_il2cpp_TypeInfo_var;
 extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern const MethodInfo* Component_GetComponent_TisAudioSource_t1740077639_m3821406207_MethodInfo_var;
 extern const MethodInfo* Object_FindObjectOfType_TisLevelManager_t2278695849_m2127204068_MethodInfo_var;
 extern const MethodInfo* Component_GetComponent_TisAnimator_t2776330603_m4147395588_MethodInfo_var;
 extern const MethodInfo* GameObject_GetComponent_TisText_t9039225_m202917489_MethodInfo_var;
@@ -2387,20 +2584,22 @@ extern "C"  void starController_Start_m2721119693 (starController_t1593313166 * 
 		s_Il2CppMethodIntialized = true;
 	}
 	{
+		AudioSource_t1740077639 * L_0 = Component_GetComponent_TisAudioSource_t1740077639_m3821406207(__this, /*hidden argument*/Component_GetComponent_TisAudioSource_t1740077639_m3821406207_MethodInfo_var);
+		__this->set_audioSource_6(L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t3071478659_il2cpp_TypeInfo_var);
-		LevelManager_t2278695849 * L_0 = Object_FindObjectOfType_TisLevelManager_t2278695849_m2127204068(NULL /*static, unused*/, /*hidden argument*/Object_FindObjectOfType_TisLevelManager_t2278695849_m2127204068_MethodInfo_var);
-		__this->set_levelManager_2(L_0);
-		Animator_t2776330603 * L_1 = Component_GetComponent_TisAnimator_t2776330603_m4147395588(__this, /*hidden argument*/Component_GetComponent_TisAnimator_t2776330603_m4147395588_MethodInfo_var);
-		__this->set_goalAnimator_3(L_1);
-		GameObject_t3674682005 * L_2 = GameObject_Find_m332785498(NULL /*static, unused*/, _stringLiteral3013660425, /*hidden argument*/NULL);
-		NullCheck(L_2);
-		Text_t9039225 * L_3 = GameObject_GetComponent_TisText_t9039225_m202917489(L_2, /*hidden argument*/GameObject_GetComponent_TisText_t9039225_m202917489_MethodInfo_var);
-		__this->set_winText_4(L_3);
-		Text_t9039225 * L_4 = __this->get_winText_4();
+		LevelManager_t2278695849 * L_1 = Object_FindObjectOfType_TisLevelManager_t2278695849_m2127204068(NULL /*static, unused*/, /*hidden argument*/Object_FindObjectOfType_TisLevelManager_t2278695849_m2127204068_MethodInfo_var);
+		__this->set_levelManager_2(L_1);
+		Animator_t2776330603 * L_2 = Component_GetComponent_TisAnimator_t2776330603_m4147395588(__this, /*hidden argument*/Component_GetComponent_TisAnimator_t2776330603_m4147395588_MethodInfo_var);
+		__this->set_goalAnimator_3(L_2);
+		GameObject_t3674682005 * L_3 = GameObject_Find_m332785498(NULL /*static, unused*/, _stringLiteral3013660425, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		Text_t9039225 * L_4 = GameObject_GetComponent_TisText_t9039225_m202917489(L_3, /*hidden argument*/GameObject_GetComponent_TisText_t9039225_m202917489_MethodInfo_var);
+		__this->set_winText_4(L_4);
+		Text_t9039225 * L_5 = __this->get_winText_4();
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_5 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
-		NullCheck(L_4);
-		VirtActionInvoker1< String_t* >::Invoke(74 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_4, L_5);
+		String_t* L_6 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
+		NullCheck(L_5);
+		VirtActionInvoker1< String_t* >::Invoke(74 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_5, L_6);
 		return;
 	}
 }
@@ -2455,6 +2654,27 @@ extern "C"  void starController_LoadNextLevel_m3669649206 (starController_t15933
 		LevelManager_t2278695849 * L_0 = __this->get_levelManager_2();
 		NullCheck(L_0);
 		LevelManager_LoadNextLevel_m1768606331(L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void starController::PlayWinSound()
+extern "C"  void starController_PlayWinSound_m477853950 (starController_t1593313166 * __this, const MethodInfo* method)
+{
+	{
+		bool L_0 = PlayerPrefsManager_GetSfxSetting_m270427016(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if (!L_0)
+		{
+			goto IL_0015;
+		}
+	}
+	{
+		AudioSource_t1740077639 * L_1 = __this->get_audioSource_6();
+		NullCheck(L_1);
+		AudioSource_Play_m1360558992(L_1, /*hidden argument*/NULL);
+	}
+
+IL_0015:
+	{
 		return;
 	}
 }

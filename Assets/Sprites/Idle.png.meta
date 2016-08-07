@@ -11,7 +11,7 @@ TextureImporter:
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -50,11 +50,14 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: Idle_0
+    - serializedVersion: 2
+      name: Idle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -64,29 +67,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 66, y: -190}
-        - {x: 73, y: -144}
-        - {x: 73, y: -4}
-        - {x: 77, y: 50}
-        - {x: 77, y: 152}
-        - {x: 53, y: 197}
-        - {x: 48, y: 198}
-        - {x: -6, y: 198}
-        - {x: -44, y: 171}
-        - {x: -59, y: 105}
-        - {x: -48, y: 57}
-        - {x: -62, y: -26}
-        - {x: -79, y: -140}
-        - {x: -79, y: -151}
-        - {x: -68, y: -164}
-        - {x: -36, y: -179}
-        - {x: -18, y: -200}
-        - {x: 7, y: -200}
-        - {x: 11, y: -193}
-        - {x: 30, y: -200}
-        - {x: 56, y: -200}
-    - name: Idle_1
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle_1
       rect:
         serializedVersion: 2
         x: 200
@@ -96,27 +80,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 77, y: -46}
-        - {x: 77, y: -45}
-        - {x: 63, y: 66}
-        - {x: 77, y: 95}
-        - {x: 77, y: 165}
-        - {x: 45, y: 198}
-        - {x: -8, y: 198}
-        - {x: -46, y: 153}
-        - {x: -59, y: 123}
-        - {x: -50, y: 78}
-        - {x: -70, y: -94}
-        - {x: -85, y: -131}
-        - {x: -85, y: -154}
-        - {x: -58, y: -174}
-        - {x: -22, y: -195}
-        - {x: -18, y: -200}
-        - {x: 61, y: -200}
-        - {x: 66, y: -190}
-        - {x: 70, y: -147}
-    - name: Idle_2
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle_2
       rect:
         serializedVersion: 2
         x: 400
@@ -126,29 +93,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 65, y: 76}
-        - {x: 77, y: 95}
-        - {x: 77, y: 154}
-        - {x: 52, y: 196}
-        - {x: 45, y: 198}
-        - {x: -1, y: 198}
-        - {x: -32, y: 185}
-        - {x: -63, y: 111}
-        - {x: -48, y: 70}
-        - {x: -74, y: -80}
-        - {x: -95, y: -123}
-        - {x: -95, y: -145}
-        - {x: -79, y: -164}
-        - {x: -24, y: -189}
-        - {x: -15, y: -200}
-        - {x: -1, y: -200}
-        - {x: 12, y: -194}
-        - {x: 29, y: -200}
-        - {x: 57, y: -200}
-        - {x: 68, y: -191}
-        - {x: 74, y: -8}
-    - name: Idle_3
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle_3
       rect:
         serializedVersion: 2
         x: 600
@@ -158,26 +106,8 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 77, y: -46}
-        - {x: 77, y: -45}
-        - {x: 63, y: 66}
-        - {x: 77, y: 95}
-        - {x: 77, y: 165}
-        - {x: 45, y: 198}
-        - {x: -8, y: 198}
-        - {x: -46, y: 153}
-        - {x: -59, y: 123}
-        - {x: -50, y: 78}
-        - {x: -70, y: -94}
-        - {x: -85, y: -131}
-        - {x: -85, y: -154}
-        - {x: -58, y: -174}
-        - {x: -22, y: -195}
-        - {x: -18, y: -200}
-        - {x: 61, y: -200}
-        - {x: 66, y: -190}
-        - {x: 70, y: -147}
+      outline: []
+      tessellationDetail: -1
     outline: []
   spritePackingTag: 
   userData: 

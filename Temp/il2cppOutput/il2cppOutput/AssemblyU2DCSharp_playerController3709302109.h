@@ -18,6 +18,10 @@ struct Transform_t1659122786;
 struct GameObjectU5BU5D_t2662109048;
 // UnityEngine.GameObject
 struct GameObject_t3674682005;
+// UnityEngine.AudioSource
+struct AudioSource_t1740077639;
+// UnityEngine.AudioClip
+struct AudioClip_t794140988;
 
 #include "UnityEngine_UnityEngine_MonoBehaviour667441552.h"
 #include "UnityEngine_UnityEngine_LayerMask3236759763.h"
@@ -88,6 +92,12 @@ public:
 	Vector2_t4282066565  ___oldVelocity_27;
 	// System.Boolean playerController::disableControls
 	bool ___disableControls_28;
+	// UnityEngine.AudioSource playerController::audioSource
+	AudioSource_t1740077639 * ___audioSource_29;
+	// UnityEngine.AudioClip playerController::jumpClip
+	AudioClip_t794140988 * ___jumpClip_30;
+	// UnityEngine.AudioClip playerController::landClip
+	AudioClip_t794140988 * ___landClip_31;
 
 public:
 	inline static int32_t get_offset_of_xmin_2() { return static_cast<int32_t>(offsetof(playerController_t3709302109, ___xmin_2)); }
@@ -310,6 +320,33 @@ public:
 	inline void set_disableControls_28(bool value)
 	{
 		___disableControls_28 = value;
+	}
+
+	inline static int32_t get_offset_of_audioSource_29() { return static_cast<int32_t>(offsetof(playerController_t3709302109, ___audioSource_29)); }
+	inline AudioSource_t1740077639 * get_audioSource_29() const { return ___audioSource_29; }
+	inline AudioSource_t1740077639 ** get_address_of_audioSource_29() { return &___audioSource_29; }
+	inline void set_audioSource_29(AudioSource_t1740077639 * value)
+	{
+		___audioSource_29 = value;
+		Il2CppCodeGenWriteBarrier(&___audioSource_29, value);
+	}
+
+	inline static int32_t get_offset_of_jumpClip_30() { return static_cast<int32_t>(offsetof(playerController_t3709302109, ___jumpClip_30)); }
+	inline AudioClip_t794140988 * get_jumpClip_30() const { return ___jumpClip_30; }
+	inline AudioClip_t794140988 ** get_address_of_jumpClip_30() { return &___jumpClip_30; }
+	inline void set_jumpClip_30(AudioClip_t794140988 * value)
+	{
+		___jumpClip_30 = value;
+		Il2CppCodeGenWriteBarrier(&___jumpClip_30, value);
+	}
+
+	inline static int32_t get_offset_of_landClip_31() { return static_cast<int32_t>(offsetof(playerController_t3709302109, ___landClip_31)); }
+	inline AudioClip_t794140988 * get_landClip_31() const { return ___landClip_31; }
+	inline AudioClip_t794140988 ** get_address_of_landClip_31() { return &___landClip_31; }
+	inline void set_landClip_31(AudioClip_t794140988 * value)
+	{
+		___landClip_31 = value;
+		Il2CppCodeGenWriteBarrier(&___landClip_31, value);
 	}
 };
 

@@ -4,21 +4,34 @@ using System.Collections;
 
 public class PlayerPrefsManager : MonoBehaviour {
 
-	const string MASTER_VOLUME_KEY = "master_volume";
-	const string DIFFICULTY_KEY = "difficulty";
+	const string MUSIC = "music_enabled";
+	const string SFX = "sfx_enabled";
 	const string LEVEL_KEY = "level_unlocked_";
 
-	// Master volume settings
-	public static void SetMasterVolume(float volume) {
-		if (volume >= 0f && volume <= 1f) {
-			PlayerPrefs.SetFloat (MASTER_VOLUME_KEY, volume);
+	// Music settings
+	public static void SetMusicSetting(bool enabled) {
+		if (enabled == true) {
+			PlayerPrefs.SetInt (MUSIC, 1);
 		} else {
-			Debug.LogError ("Master volume out of range.");
+			PlayerPrefs.SetInt (MUSIC, 0);
 		}
 	}
 
-	public static float GetMasterVolume() {
-		return PlayerPrefs.GetFloat (MASTER_VOLUME_KEY);
+	public static bool GetMusicSetting() {
+		return (PlayerPrefs.GetInt (MUSIC) == 1);
+	}
+
+	// SFX settings
+	public static void SetSfxSetting(bool enabled) {
+		if (enabled == true) {
+			PlayerPrefs.SetInt (SFX, 1);
+		} else {
+			PlayerPrefs.SetInt (SFX, 0);
+		}
+	}
+		
+	public static bool GetSfxSetting() {
+		return (PlayerPrefs.GetInt (SFX) == 1);
 	}
 
 	// Level tracking
@@ -37,18 +50,5 @@ public class PlayerPrefsManager : MonoBehaviour {
 			Debug.LogError ("Trying to check a level not in build order.");
 			return false;
 		}
-	}
-
-	// Difficulty settings
-	public static void SetDifficulty(float difficulty) {
-		if (difficulty >= 1f && difficulty <= 3f) {
-			PlayerPrefs.SetFloat (DIFFICULTY_KEY, difficulty);
-		} else {
-			Debug.LogError ("Difficulty volume out of range.");
-		}
-	}
-
-	public static float GetDifficulty() {
-		return PlayerPrefs.GetFloat (DIFFICULTY_KEY);
 	}
 }

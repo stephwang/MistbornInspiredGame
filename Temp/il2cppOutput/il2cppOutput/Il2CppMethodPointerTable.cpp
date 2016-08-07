@@ -7428,6 +7428,11 @@ extern "C" void AudioConfigurationChangeHandler__ctor_m2273531181 ();
 extern "C" void AudioConfigurationChangeHandler_Invoke_m3047533822 ();
 extern "C" void AudioConfigurationChangeHandler_BeginInvoke_m194625699 ();
 extern "C" void AudioConfigurationChangeHandler_EndInvoke_m218260925 ();
+extern "C" void AudioSource_set_volume_m1410546616 ();
+extern "C" void AudioSource_set_clip_m19502010 ();
+extern "C" void AudioSource_Play_m3374467819 ();
+extern "C" void AudioSource_Play_m1360558992 ();
+extern "C" void AudioSource_set_loop_m3617666708 ();
 extern "C" void Behaviour__ctor_m1624944828 ();
 extern "C" void Behaviour_get_enabled_m1239363704 ();
 extern "C" void Behaviour_set_enabled_m2046806933 ();
@@ -8702,13 +8707,9 @@ extern "C" void Plane_get_normal_m3534129213_AdjustorThunk ();
 extern "C" void Plane_get_distance_m2612484153_AdjustorThunk ();
 extern "C" void Plane_Raycast_m2829769106_AdjustorThunk ();
 extern "C" void PlayerPrefs_TrySetInt_m2066630347 ();
-extern "C" void PlayerPrefs_TrySetFloat_m96551332 ();
 extern "C" void PlayerPrefs_SetInt_m3485171996 ();
 extern "C" void PlayerPrefs_GetInt_m3632746280 ();
 extern "C" void PlayerPrefs_GetInt_m1334009359 ();
-extern "C" void PlayerPrefs_SetFloat_m1687591347 ();
-extern "C" void PlayerPrefs_GetFloat_m1210224051 ();
-extern "C" void PlayerPrefs_GetFloat_m4179026766 ();
 extern "C" void PlayerPrefsException__ctor_m3661687413 ();
 extern "C" void PropertyAttribute__ctor_m1741701746 ();
 extern "C" void Quaternion__ctor_m1100844011_AdjustorThunk ();
@@ -10786,13 +10787,19 @@ extern "C" void Lose_OnTriggerEnter2D_m3461302223 ();
 extern "C" void Lose_ReloadLevel_m2880367759 ();
 extern "C" void MenuController__ctor_m1449767040 ();
 extern "C" void MenuController_Start_m396904832 ();
+extern "C" void MenuController_UpdateMusicSetting_m1365643864 ();
 extern "C" void MenuController_ToggleMenu_m4136624279 ();
+extern "C" void MenuController_SaveSetting_m4290371889 ();
 extern "C" void metalObjectController__ctor_m2697807433 ();
 extern "C" void metalObjectController_Start_m1644945225 ();
 extern "C" void metalObjectController_Update_m3754513892 ();
 extern "C" void metalObjectController_DestroyArrow_m1941569610 ();
 extern "C" void metalObjectController_SelectObject_m232270966 ();
 extern "C" void metalObjectController_DeselectObject_m1949332663 ();
+extern "C" void MusicManager__ctor_m1429130675 ();
+extern "C" void MusicManager_Awake_m1666735894 ();
+extern "C" void MusicManager_Start_m376268467 ();
+extern "C" void MusicManager_SetMusic_m1386028709 ();
 extern "C" void NewGame__ctor_m3041174041 ();
 extern "C" void NewGame_Start_m1988311833 ();
 extern "C" void NewGame_Update_m1513976852 ();
@@ -10807,18 +10814,21 @@ extern "C" void playerController_ExitAllomancy_m3375317152 ();
 extern "C" void playerController_DrawArrow_m1563665761 ();
 extern "C" void playerController_DestroyArrow_m49912597 ();
 extern "C" void playerController_CalculateAllomanticForce_m3856264393 ();
+extern "C" void playerController_PlayJumpSound_m1229286761 ();
+extern "C" void playerController_PlayLandSound_m319312140 ();
 extern "C" void PlayerPrefsManager__ctor_m2738204125 ();
-extern "C" void PlayerPrefsManager_SetMasterVolume_m760796594 ();
-extern "C" void PlayerPrefsManager_GetMasterVolume_m1730672449 ();
+extern "C" void PlayerPrefsManager_SetMusicSetting_m3476237471 ();
+extern "C" void PlayerPrefsManager_GetMusicSetting_m176498408 ();
+extern "C" void PlayerPrefsManager_SetSfxSetting_m3091358015 ();
+extern "C" void PlayerPrefsManager_GetSfxSetting_m270427016 ();
 extern "C" void PlayerPrefsManager_Unlocklevel_m1663064844 ();
 extern "C" void PlayerPrefsManager_IsLevelUnlocked_m1301657045 ();
-extern "C" void PlayerPrefsManager_SetDifficulty_m1725983027 ();
-extern "C" void PlayerPrefsManager_GetDifficulty_m1110724640 ();
 extern "C" void starController__ctor_m3773981901 ();
 extern "C" void starController_Start_m2721119693 ();
 extern "C" void starController_OnTriggerEnter2D_m348056488 ();
 extern "C" void starController_LoadNextLevel_m3669649206 ();
-extern const Il2CppMethodPointer g_MethodPointers[10807] = 
+extern "C" void starController_PlayWinSound_m477853950 ();
+extern const Il2CppMethodPointer g_MethodPointers[10817] = 
 {
 	Locale_GetText_m2389348044,
 	Locale_GetText_m2218462520,
@@ -18237,6 +18247,11 @@ extern const Il2CppMethodPointer g_MethodPointers[10807] =
 	AudioConfigurationChangeHandler_Invoke_m3047533822,
 	AudioConfigurationChangeHandler_BeginInvoke_m194625699,
 	AudioConfigurationChangeHandler_EndInvoke_m218260925,
+	AudioSource_set_volume_m1410546616,
+	AudioSource_set_clip_m19502010,
+	AudioSource_Play_m3374467819,
+	AudioSource_Play_m1360558992,
+	AudioSource_set_loop_m3617666708,
 	Behaviour__ctor_m1624944828,
 	Behaviour_get_enabled_m1239363704,
 	Behaviour_set_enabled_m2046806933,
@@ -19511,13 +19526,9 @@ extern const Il2CppMethodPointer g_MethodPointers[10807] =
 	Plane_get_distance_m2612484153_AdjustorThunk,
 	Plane_Raycast_m2829769106_AdjustorThunk,
 	PlayerPrefs_TrySetInt_m2066630347,
-	PlayerPrefs_TrySetFloat_m96551332,
 	PlayerPrefs_SetInt_m3485171996,
 	PlayerPrefs_GetInt_m3632746280,
 	PlayerPrefs_GetInt_m1334009359,
-	PlayerPrefs_SetFloat_m1687591347,
-	PlayerPrefs_GetFloat_m1210224051,
-	PlayerPrefs_GetFloat_m4179026766,
 	PlayerPrefsException__ctor_m3661687413,
 	PropertyAttribute__ctor_m1741701746,
 	Quaternion__ctor_m1100844011_AdjustorThunk,
@@ -21595,13 +21606,19 @@ extern const Il2CppMethodPointer g_MethodPointers[10807] =
 	Lose_ReloadLevel_m2880367759,
 	MenuController__ctor_m1449767040,
 	MenuController_Start_m396904832,
+	MenuController_UpdateMusicSetting_m1365643864,
 	MenuController_ToggleMenu_m4136624279,
+	MenuController_SaveSetting_m4290371889,
 	metalObjectController__ctor_m2697807433,
 	metalObjectController_Start_m1644945225,
 	metalObjectController_Update_m3754513892,
 	metalObjectController_DestroyArrow_m1941569610,
 	metalObjectController_SelectObject_m232270966,
 	metalObjectController_DeselectObject_m1949332663,
+	MusicManager__ctor_m1429130675,
+	MusicManager_Awake_m1666735894,
+	MusicManager_Start_m376268467,
+	MusicManager_SetMusic_m1386028709,
 	NewGame__ctor_m3041174041,
 	NewGame_Start_m1988311833,
 	NewGame_Update_m1513976852,
@@ -21616,15 +21633,18 @@ extern const Il2CppMethodPointer g_MethodPointers[10807] =
 	playerController_DrawArrow_m1563665761,
 	playerController_DestroyArrow_m49912597,
 	playerController_CalculateAllomanticForce_m3856264393,
+	playerController_PlayJumpSound_m1229286761,
+	playerController_PlayLandSound_m319312140,
 	PlayerPrefsManager__ctor_m2738204125,
-	PlayerPrefsManager_SetMasterVolume_m760796594,
-	PlayerPrefsManager_GetMasterVolume_m1730672449,
+	PlayerPrefsManager_SetMusicSetting_m3476237471,
+	PlayerPrefsManager_GetMusicSetting_m176498408,
+	PlayerPrefsManager_SetSfxSetting_m3091358015,
+	PlayerPrefsManager_GetSfxSetting_m270427016,
 	PlayerPrefsManager_Unlocklevel_m1663064844,
 	PlayerPrefsManager_IsLevelUnlocked_m1301657045,
-	PlayerPrefsManager_SetDifficulty_m1725983027,
-	PlayerPrefsManager_GetDifficulty_m1110724640,
 	starController__ctor_m3773981901,
 	starController_Start_m2721119693,
 	starController_OnTriggerEnter2D_m348056488,
 	starController_LoadNextLevel_m3669649206,
+	starController_PlayWinSound_m477853950,
 };

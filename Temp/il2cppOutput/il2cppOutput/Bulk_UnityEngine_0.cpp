@@ -65,6 +65,8 @@ struct PCMReaderCallback_t83861602;
 struct PCMSetPositionCallback_t4244274966;
 // UnityEngine.AudioSettings/AudioConfigurationChangeHandler
 struct AudioConfigurationChangeHandler_t1377657005;
+// UnityEngine.AudioSource
+struct AudioSource_t1740077639;
 // UnityEngine.Behaviour
 struct Behaviour_t200106419;
 // UnityEngine.BitStream
@@ -221,8 +223,6 @@ struct GUIContent_t2094828418;
 struct GUILayer_t2983897946;
 // UnityEngine.GUIElement
 struct GUIElement_t3775428101;
-// UnityEngine.GUILayoutOption
-struct GUILayoutOption_t331591504;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
@@ -310,6 +310,9 @@ struct GUILayoutOption_t331591504;
 #include "UnityEngine_UnityEngine_AudioSettings3774206607MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_AudioSettings_AudioConfigu1377657005MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_AudioSettings_AudioConfigu1377657005.h"
+#include "UnityEngine_UnityEngine_AudioSource1740077639.h"
+#include "UnityEngine_UnityEngine_AudioSource1740077639MethodDeclarations.h"
+#include "mscorlib_System_UInt6424668076.h"
 #include "UnityEngine_UnityEngine_AudioType794660134.h"
 #include "UnityEngine_UnityEngine_AudioType794660134MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Behaviour200106419.h"
@@ -549,9 +552,6 @@ struct GUILayoutOption_t331591504;
 #include "UnityEngine_UnityEngine_GUIElement3775428101MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_GUILayer2983897946.h"
 #include "UnityEngine_UnityEngine_GUILayer2983897946MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_GUILayout3864601915.h"
-#include "UnityEngine_UnityEngine_GUILayoutOption331591504MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_GUILayoutOption_Type957706982.h"
 
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -2769,6 +2769,53 @@ extern "C"  Il2CppObject * AudioConfigurationChangeHandler_BeginInvoke_m19462569
 extern "C"  void AudioConfigurationChangeHandler_EndInvoke_m218260925 (AudioConfigurationChangeHandler_t1377657005 * __this, Il2CppObject * ___result0, const MethodInfo* method)
 {
 	il2cpp_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
+// System.Void UnityEngine.AudioSource::set_volume(System.Single)
+extern "C"  void AudioSource_set_volume_m1410546616 (AudioSource_t1740077639 * __this, float ___value0, const MethodInfo* method)
+{
+	typedef void (*AudioSource_set_volume_m1410546616_ftn) (AudioSource_t1740077639 *, float);
+	static AudioSource_set_volume_m1410546616_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (AudioSource_set_volume_m1410546616_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.AudioSource::set_volume(System.Single)");
+	_il2cpp_icall_func(__this, ___value0);
+}
+// System.Void UnityEngine.AudioSource::set_clip(UnityEngine.AudioClip)
+extern "C"  void AudioSource_set_clip_m19502010 (AudioSource_t1740077639 * __this, AudioClip_t794140988 * ___value0, const MethodInfo* method)
+{
+	typedef void (*AudioSource_set_clip_m19502010_ftn) (AudioSource_t1740077639 *, AudioClip_t794140988 *);
+	static AudioSource_set_clip_m19502010_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (AudioSource_set_clip_m19502010_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.AudioSource::set_clip(UnityEngine.AudioClip)");
+	_il2cpp_icall_func(__this, ___value0);
+}
+// System.Void UnityEngine.AudioSource::Play(System.UInt64)
+extern "C"  void AudioSource_Play_m3374467819 (AudioSource_t1740077639 * __this, uint64_t ___delay0, const MethodInfo* method)
+{
+	typedef void (*AudioSource_Play_m3374467819_ftn) (AudioSource_t1740077639 *, uint64_t);
+	static AudioSource_Play_m3374467819_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (AudioSource_Play_m3374467819_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.AudioSource::Play(System.UInt64)");
+	_il2cpp_icall_func(__this, ___delay0);
+}
+// System.Void UnityEngine.AudioSource::Play()
+extern "C"  void AudioSource_Play_m1360558992 (AudioSource_t1740077639 * __this, const MethodInfo* method)
+{
+	uint64_t V_0 = 0;
+	{
+		V_0 = (((int64_t)((int64_t)0)));
+		uint64_t L_0 = V_0;
+		AudioSource_Play_m3374467819(__this, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.AudioSource::set_loop(System.Boolean)
+extern "C"  void AudioSource_set_loop_m3617666708 (AudioSource_t1740077639 * __this, bool ___value0, const MethodInfo* method)
+{
+	typedef void (*AudioSource_set_loop_m3617666708_ftn) (AudioSource_t1740077639 *, bool);
+	static AudioSource_set_loop_m3617666708_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (AudioSource_set_loop_m3617666708_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.AudioSource::set_loop(System.Boolean)");
+	_il2cpp_icall_func(__this, ___value0);
 }
 // System.Void UnityEngine.Behaviour::.ctor()
 extern "C"  void Behaviour__ctor_m1624944828 (Behaviour_t200106419 * __this, const MethodInfo* method)
@@ -12798,48 +12845,6 @@ extern "C"  GUIElement_t3775428101 * GUILayer_INTERNAL_CALL_HitTest_m4210766818 
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (GUILayer_INTERNAL_CALL_HitTest_m4210766818_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GUILayer::INTERNAL_CALL_HitTest(UnityEngine.GUILayer,UnityEngine.Vector3&)");
 	return _il2cpp_icall_func(___self0, ___screenPosition1);
-}
-// UnityEngine.GUILayoutOption UnityEngine.GUILayout::Width(System.Single)
-extern Il2CppClass* Single_t4291918972_il2cpp_TypeInfo_var;
-extern Il2CppClass* GUILayoutOption_t331591504_il2cpp_TypeInfo_var;
-extern const uint32_t GUILayout_Width_m2259621411_MetadataUsageId;
-extern "C"  GUILayoutOption_t331591504 * GUILayout_Width_m2259621411 (Il2CppObject * __this /* static, unused */, float ___width0, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (GUILayout_Width_m2259621411_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		float L_0 = ___width0;
-		float L_1 = L_0;
-		Il2CppObject * L_2 = Box(Single_t4291918972_il2cpp_TypeInfo_var, &L_1);
-		GUILayoutOption_t331591504 * L_3 = (GUILayoutOption_t331591504 *)il2cpp_codegen_object_new(GUILayoutOption_t331591504_il2cpp_TypeInfo_var);
-		GUILayoutOption__ctor_m573459815(L_3, 0, L_2, /*hidden argument*/NULL);
-		return L_3;
-	}
-}
-// UnityEngine.GUILayoutOption UnityEngine.GUILayout::Height(System.Single)
-extern Il2CppClass* Single_t4291918972_il2cpp_TypeInfo_var;
-extern Il2CppClass* GUILayoutOption_t331591504_il2cpp_TypeInfo_var;
-extern const uint32_t GUILayout_Height_m3774802884_MetadataUsageId;
-extern "C"  GUILayoutOption_t331591504 * GUILayout_Height_m3774802884 (Il2CppObject * __this /* static, unused */, float ___height0, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (GUILayout_Height_m3774802884_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		float L_0 = ___height0;
-		float L_1 = L_0;
-		Il2CppObject * L_2 = Box(Single_t4291918972_il2cpp_TypeInfo_var, &L_1);
-		GUILayoutOption_t331591504 * L_3 = (GUILayoutOption_t331591504 *)il2cpp_codegen_object_new(GUILayoutOption_t331591504_il2cpp_TypeInfo_var);
-		GUILayoutOption__ctor_m573459815(L_3, 1, L_2, /*hidden argument*/NULL);
-		return L_3;
-	}
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
